@@ -1,0 +1,55 @@
+.container {
+  display: grid;
+  grid-template-columns:
+    [filll-start] 1fr
+    [filll-end center-start] minmax(min-content, 145rem)
+    [center-end fillr-start] 1fr [fillr-end];
+}
+
+.nav {
+  grid-column: filll-start / fillr-end;
+}
+
+.trending {
+  grid-column: filll-start / fillr-end;
+}
+
+.promotions {
+  grid-column: filll-start / fillr-end;
+  width: 100%;
+}
+
+.promotions--static {
+  grid-column: center-start / center-end;
+  width: 100%;
+  height: 40rem;
+}
+
+.category {
+  grid-column: center-start / center-end;
+  width: 100%;
+}
+
+.picks {
+  grid-column: center-start / center-end;
+  width: 100%;
+}
+
+.top {
+  grid-column: center-start / center-end;
+  width: 100%;
+}
+
+.series {
+  grid-column: center-start / center-end;
+  width: 100%;
+}
+
+.comic {
+  grid-column: center-start / center-end;
+  width: 100%;
+}
+
+.footer {
+  grid-column: filll-start / fillr-end;
+}
