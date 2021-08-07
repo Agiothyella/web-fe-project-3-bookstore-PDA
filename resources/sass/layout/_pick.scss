@@ -1,0 +1,40 @@
+.picks {
+  &__slide__img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.picks__splide-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  background-color: rgba($color-dark-2, 0.95);
+
+  .splide__track {
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.picks__splide-nav > .splide__track > .splide__list > .splide__slide {
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s;
+  opacity: 1;
+  border-radius: 0;
+  color: $color-font-light;
+  font-size: 2rem;
+}
+
+.picks__splide-nav > .splide__track > .splide__list > .splide__slide.is-active {
+  color: $color-secondary;
+  border-color: transparent;
+  opacity: 1;
+}

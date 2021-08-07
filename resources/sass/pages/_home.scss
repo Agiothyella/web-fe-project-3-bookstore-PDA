@@ -7,7 +7,10 @@
 }
 
 .nav {
-  grid-column: filll-start / fillr-end;
+  grid-column: center-start / center-end;
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  align-items: center;
 }
 
 .trending {
@@ -31,6 +34,7 @@
 }
 
 .picks {
+  position: relative;
   grid-column: center-start / center-end;
   width: 100%;
 }

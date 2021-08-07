@@ -13,7 +13,9 @@
   <body class="container">
     <nav class="nav">
       <div class="nav__title">
-        <img src="resources/img/Logo.png" alt="Agiothyella Bookstore" />
+        <a href="#">
+          <img src="resources/img/Logo.png" alt="Agiothyella Bookstore" />
+        </a>
       </div>
       <div class="nav__menu">
         <form action="#" class="c-search-bar">
@@ -27,9 +29,12 @@
           </button>
         </form>
         <div class="nav__disc">
-          <ul class="nav__disc__list">
-            <li class="nav__disc__item">
+          <ul class="nav__list">
+            <li class="nav__item">
               <a href="#" class="nav__link">Coupons & Deals</a>
+            </li>
+            <li class="nav__disc__item">
+              <a href="#" class="nav__link">Gift Cards</a>
             </li>
             <li class="nav__disc__item">
               <a href="#" class="nav__link">Membership</a>
@@ -38,23 +43,60 @@
         </div>
       </div>
       <div class="nav__shop">
-        <div class="nav__cart"><a href="#" class="nav__link"></a></div>
+        <div class="nav__cart">
+          <a href="#" class="nav__link"
+            ><img src="resources/icon/cart.svg" alt="Cart"
+          /></a>
+        </div>
         <div class="nav__wishlist">
           <a href="#" class="nav__link">Wishlist</a>
         </div>
-        <div class="nav__member">
-          <a href="#">
-            <p>Hart</p>
-            <img
-              class="nav__member__photo"
-              src="resources/img/photo.jpg"
-              alt="Hart"
-          /></a>
-        </div>
+        <a href="#" class="nav__member nav__link">
+          <p>Hart</p>
+          <img
+            class="nav__member__photo"
+            src="resources/img/photo.jpg"
+            alt="Hart"
+        /></a>
+      </div>
+      <div class="nav__more">
+        <ul class="nav__list nav__list--more">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Audiobooks</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">eBooks</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Coming Soon</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Signed Edition</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Authors</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Non-English</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Blog</a>
+          </li>
+        </ul>
       </div>
     </nav>
 
-    <header class="trending"></header>
+    <header class="trending">
+      <div class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">Slide 01</li>
+            <li class="splide__slide">Slide 02</li>
+            <li class="splide__slide">Slide 03</li>
+          </ul>
+        </div>
+      </div>
+    </header>
 
     <section id="promotions-top" class="promotions">
       <div class="promotions__splide splide">
@@ -97,9 +139,142 @@
       </div>
     </section>
 
-    <section id="category" class="category"></section>
+    <section id="category" class="category">
+      <ul class="category__list">
+        <li class="category__item">
+          <a href="#" class="category__link">
+            <img
+              src="resources/icon/art.svg"
+              alt="Art"
+              class="category__icon"
+            />
+            <p class="category__description">Art</p>
+          </a>
+        </li>
+        <li class="category__item">
+          <a href="#" class="category__link">
+            <img
+              src="resources/icon/biography.svg"
+              alt="Biography"
+              class="category__icon"
+            />
+            <p class="category__description">Biography</p>
+          </a>
+        </li>
+        <li class="category__item">
+          <a href="#" class="category__link">
+            <img
+              src="resources/icon/business.svg"
+              alt="Business"
+              class="category__icon"
+            />
+            <p class="category__description">Business</p>
+          </a>
+        </li>
+        <li class="category__item">
+          <a href="#" class="category__link">
+            <img
+              src="resources/icon/children.svg"
+              alt="Children"
+              class="category__icon"
+            />
+            <p class="category__description">Children</p>
+          </a>
+        </li>
+        <li class="category__item">
+          <a href="#" class="category__link">
+            <img
+              src="resources/icon/cook.svg"
+              alt="Cooking"
+              class="category__icon"
+            />
+            <p class="category__description">Cooking</p>
+          </a>
+        </li>
+        <li class="category__item">
+          <a href="#" class="category__link">
+            <img
+              src="resources/icon/fantasy.svg"
+              alt="Fantasy"
+              class="category__icon"
+            />
+            <p class="category__description">Fantasy</p>
+          </a>
+        </li>
+        <li class="category__item">
+          <a href="#" class="category__link">
+            <img
+              src="resources/icon/history.svg"
+              alt="History"
+              class="category__icon"
+            />
+            <p class="category__description">History</p>
+          </a>
+        </li>
+        <li class="category__item">
+          <a href="#" class="category__link">
+            <img
+              src="resources/icon/mystery.svg"
+              alt="Mystery"
+              class="category__icon"
+            />
+            <p class="category__description">Mystery</p>
+          </a>
+        </li>
+        <li class="category__item">
+          <a href="#" class="category__link">
+            <img
+              src="resources/icon/philosophy.svg"
+              alt="Philosophy"
+              class="category__icon"
+            />
+            <p class="category__description">Philosophy</p>
+          </a>
+        </li>
+        <li class="category__item">
+          <a href="#" class="category__link">
+            <img
+              src="resources/icon/teen.svg"
+              alt="Teen"
+              class="category__icon"
+            />
+            <p class="category__description">Teen</p>
+          </a>
+        </li>
+      </ul>
+    </section>
 
-    <section id="picks" class="picks"></section>
+    <section id="picks" class="picks">
+      <div class="picks__splide splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img
+                src="resources/img/promotion-3.jpg"
+                alt=""
+                class="picks__slide__img"
+              />
+            </li>
+            <li class="splide__slide">
+              <img
+                src="resources/img/promotion-4.jpg"
+                alt=""
+                class="picks__slide__img"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="picks__splide-nav splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">Weekly Picks</li>
+            <li class="splide__slide">Monthly Picks</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
     <section id="top" class="top">
       <div class="splide">
@@ -113,9 +288,29 @@
       </div>
     </section>
 
-    <section id="series" class="series"></section>
+    <section id="series" class="series">
+      <div class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">Slide 01</li>
+            <li class="splide__slide">Slide 02</li>
+            <li class="splide__slide">Slide 03</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-    <section id="comic" class="comic"></section>
+    <section id="comic" class="comic">
+      <div class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">Slide 01</li>
+            <li class="splide__slide">Slide 02</li>
+            <li class="splide__slide">Slide 03</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
     <section id="promotions-bot" class="promotions promotions--static">
       <a href="#promotions-bot">

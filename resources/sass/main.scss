@@ -7,6 +7,11 @@
 @import "base/typography";
 @import "base/utilities";
 
+@import "components/book";
+@import "components/button";
+@import "components/search";
+@import "components/slider";
+
 @import "layout/category";
 @import "layout/comic";
 @import "layout/footer";
@@ -16,10 +21,5 @@
 @import "layout/series";
 @import "layout/top";
 @import "layout/trending";
-
-@import "components/book";
-@import "components/button";
-@import "components/search";
-@import "components/slider";
 
 @import "pages/home";
