@@ -121,9 +121,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid transparent;
+  border: none;
   padding: 0.5em;
-  opacity: 0.5;
   background: transparent;
   transition: border 0.2s;
 }
@@ -131,18 +130,17 @@ img {
 .splide__arrow svg {
   width: 3em;
   height: 3em;
-  fill: #f8f9fc;
+  fill: #c00000;
   transition: fill 0.2s;
 }
 
 .splide__arrow:hover {
   cursor: pointer;
-  opacity: 0.7;
-  border: 1px solid #f8f9fc;
+  border: none;
 }
 
 .splide__arrow:hover svg {
-  fill: #c00000;
+  fill: #de3c3c;
 }
 
 .splide__arrow:focus {
@@ -150,7 +148,7 @@ img {
 }
 
 .splide__arrow--prev {
-  left: 1em;
+  left: 0;
 }
 
 .splide__arrow--prev svg {
@@ -158,7 +156,7 @@ img {
 }
 
 .splide__arrow--next {
-  right: 1em;
+  right: 0;
 }
 
 .splide__slider > .splide__arrows .splide__arrow--prev {
@@ -193,13 +191,11 @@ img {
 
 .splide__pagination__page.is-active {
   background: #c00000;
-  opacity: 0.8;
 }
 
 .splide__pagination__page:hover {
   cursor: pointer;
-  opacity: 0.7;
-  background: #c00000;
+  background: #de3c3c;
 }
 
 .splide__pagination__page:focus {
@@ -300,6 +296,12 @@ img {
   height: 20px;
 }
 
+.splide__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .category__list {
   list-style: none;
   display: grid;
@@ -317,6 +319,15 @@ img {
 .category__icon {
   height: 10rem;
   width: 10rem;
+}
+
+.comic__splide {
+  width: 100%;
+  padding: 3rem;
+}
+
+.comic__splide__img {
+  width: 100%;
 }
 
 .nav__title {
@@ -382,6 +393,32 @@ img {
   text-decoration: none;
 }
 
+.picks__title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  z-index: 1;
+}
+
+.picks__more {
+  position: absolute;
+  z-index: 1;
+  color: #fff;
+  bottom: 0;
+  left: 0;
+}
+
+.picks__more__link:link, .picks__more__link:visited {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.2s;
+}
+
+.picks__more__link:hover, .picks__more__link:active {
+  color: #c00000;
+}
+
 .picks__slide__img {
   width: 100%;
   height: 100%;
@@ -428,7 +465,7 @@ img {
 
 .container {
   display: grid;
-  grid-template-columns: [filll-start] 1fr [filll-end center-start] minmax(min-content, 145rem) [center-end fillr-start] 1fr [fillr-end];
+  grid-template-columns: [filll-start] 1fr [filll-end center-start] minmax(0, 145rem) [center-end fillr-start] 1fr [fillr-end];
 }
 
 .nav {

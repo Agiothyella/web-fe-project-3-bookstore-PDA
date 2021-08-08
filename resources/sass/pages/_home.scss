@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns:
     [filll-start] 1fr
-    [filll-end center-start] minmax(min-content, 145rem)
+    [filll-end center-start] minmax(0, 145rem)
     [center-end fillr-start] 1fr [fillr-end];
 }
 

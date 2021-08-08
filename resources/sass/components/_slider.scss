@@ -8,9 +8,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid transparent;
+  border: none;
   padding: 0.5em;
-  opacity: 0.5;
   background: transparent;
   transition: border 0.2s;
 }
@@ -18,18 +17,17 @@
 .splide__arrow svg {
   width: 3em;
   height: 3em;
-  fill: $color-primary;
+  fill: $color-secondary;
   transition: fill 0.2s;
 }
 
 .splide__arrow:hover {
   cursor: pointer;
-  opacity: 0.7;
-  border: 1px solid $color-primary;
+  border: none;
 }
 
 .splide__arrow:hover svg {
-  fill: $color-secondary;
+  fill: $color-tertiary;
 }
 
 .splide__arrow:focus {
@@ -37,7 +35,8 @@
 }
 
 .splide__arrow--prev {
-  left: 1em;
+  // left: 1em;
+  left: 0;
 }
 
 .splide__arrow--prev svg {
@@ -45,7 +44,8 @@
 }
 
 .splide__arrow--next {
-  right: 1em;
+  // right: 1em;
+  right: 0;
 }
 
 .splide__slider > .splide__arrows .splide__arrow--prev {
@@ -80,13 +80,11 @@
 
 .splide__pagination__page.is-active {
   background: $color-secondary;
-  opacity: 0.8;
 }
 
 .splide__pagination__page:hover {
   cursor: pointer;
-  opacity: 0.7;
-  background: $color-secondary;
+  background: $color-tertiary;
 }
 
 .splide__pagination__page:focus {
@@ -185,4 +183,25 @@
 .splide--ttb > .splide__pagination .splide__pagination__page {
   width: 5px;
   height: 20px;
+}
+
+.splide__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.splide__title {
+}
+
+.splide__title {
+}
+
+.splide__author {
+}
+
+.splide__rating {
+}
+
+.splide__description {
 }
