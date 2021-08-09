@@ -6,6 +6,12 @@
     [center-end fillr-start] 1fr [fillr-end];
 }
 
+.help {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
 .nav {
   grid-column: center-start / center-end;
   display: grid;
@@ -35,6 +41,11 @@
 
 .picks {
   position: relative;
+  grid-column: center-start / center-end;
+  width: 100%;
+}
+
+.new {
   grid-column: center-start / center-end;
   width: 100%;
 }

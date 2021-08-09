@@ -296,10 +296,48 @@ img {
   height: 20px;
 }
 
+.splide__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  row-gap: 2rem;
+  height: 100%;
+}
+
+.splide__wrapper--large {
+  justify-content: flex-start;
+}
+
+.splide__add-cart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .splide__text {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.splide__img {
+  display: block;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  max-height: 100%;
+}
+
+.splide__img--large {
+  margin: 0 7rem;
+  justify-content: flex-start;
+}
+
+.splide__img img {
+  width: 100%;
 }
 
 .category__list {
@@ -323,11 +361,7 @@ img {
 
 .comic__splide {
   width: 100%;
-  padding: 3rem;
-}
-
-.comic__splide__img {
-  width: 100%;
+  padding: 0 3rem;
 }
 
 .nav__title {
@@ -463,9 +497,36 @@ img {
   height: 100%;
 }
 
+.series__splide {
+  width: 100%;
+  padding: 0 3rem;
+}
+
+.series__splide-text {
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+.series__splide-text__text {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.top__splide {
+  width: 100%;
+  padding: 0 8rem;
+}
+
 .container {
   display: grid;
   grid-template-columns: [filll-start] 1fr [filll-end center-start] minmax(0, 145rem) [center-end fillr-start] 1fr [fillr-end];
+}
+
+.help {
+  position: fixed;
+  left: 0;
+  bottom: 0;
 }
 
 .nav {
@@ -497,6 +558,11 @@ img {
 
 .picks {
   position: relative;
+  grid-column: center-start / center-end;
+  width: 100%;
+}
+
+.new {
   grid-column: center-start / center-end;
   width: 100%;
 }
