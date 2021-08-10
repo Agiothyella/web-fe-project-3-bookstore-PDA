@@ -218,14 +218,14 @@ img {
 }
 
 .splide--nav > .splide__track > .splide__list > .splide__slide {
-  border: 3px solid #fff;
+  border-bottom: 3px solid #fff;
   cursor: pointer;
-  opacity: 0.7;
+  opacity: 0.8;
   border-radius: 4px;
 }
 
 .splide--nav > .splide__track > .splide__list > .splide__slide.is-active {
-  border-color: #20b2aa;
+  border-color: #c00000;
   opacity: 1;
 }
 
@@ -322,8 +322,12 @@ img {
   align-items: center;
 }
 
+.splide__description {
+  margin: 0 6rem;
+  text-align: center;
+}
+
 .splide__img {
-  display: block;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -332,7 +336,7 @@ img {
 }
 
 .splide__img--large {
-  margin: 0 7rem;
+  margin: 0 15rem;
   justify-content: flex-start;
 }
 
@@ -425,6 +429,28 @@ img {
 .nav__link {
   color: #000;
   text-decoration: none;
+}
+
+.new__splide-nav {
+  width: 100%;
+  padding: 0 3rem;
+}
+
+.new__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 10rem;
+  margin: 0 15rem 0 25rem;
+}
+
+.new__img {
+  flex: 1 0 20%;
+}
+
+.new__description {
+  flex: 0 1 100%;
 }
 
 .picks__title {

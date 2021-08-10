@@ -5,6 +5,7 @@ const promotionsSplide = new Splide(".promotions__splide", {
   rewind: true,
   cover: true,
   height: "43rem",
+  keyboard: "focused",
   autoplay: true,
   interval: 10000,
   pauseOnHover: false,
@@ -17,6 +18,7 @@ const picksSplide = new Splide(".picks__splide", {
   gap: 0,
   padding: 0,
   height: "43rem",
+  keyboard: "focused",
   pagination: false,
   arrows: false,
   drag: false,
@@ -29,20 +31,50 @@ const picksSplideNav = new Splide(".picks__splide-nav", {
   arrows: false,
   direction: "ttb",
   height: "5rem",
+  keyboard: "focused",
   autoWidth: true,
 }).mount();
 
 picksSplide.sync(picksSplideNav).mount();
 
-// const newSplide = new Splide(".new__splide", {
-//   type: "loop",
-//   rewind: true,
-//   height: "60rem",
-// }).mount();
+const newSplide = new Splide(".new__splide", {
+  type: "loop",
+  rewind: true,
+  perPage: 1,
+  perMove: 1,
+  keyboard: "focused",
+  autoHeight: true,
+  pagination: false,
+  arrows: false,
+  cover: true,
+  gap: "5rem",
+  speed: 600,
+});
+
+const newSplideNav = new Splide(".new__splide-nav", {
+  type: "loop",
+  rewind: true,
+  perPage: 9,
+  isNavigation: true,
+  focus: "center",
+  perMove: 1,
+  keyboard: "focused",
+  gap: "2rem",
+  pagination: false,
+  width: "100%",
+  autoHeight: true,
+  padding: {
+    left: "2rem",
+    right: "2rem",
+  },
+}).mount();
+
+newSplide.sync(newSplideNav).mount();
 
 const topSplide = new Splide(".top__splide", {
   type: "loop",
   rewind: true,
+  keyboard: "focused",
   perPage: 2,
   perMove: 2,
   pagination: false,
@@ -67,6 +99,7 @@ const seriesSplide = new Splide(".series__splide", {
   rewind: true,
   perPage: 1,
   perMove: 1,
+  keyboard: "focused",
   autoHeight: true,
   pagination: false,
   arrows: false,
@@ -85,6 +118,7 @@ const seriesSplideText = new Splide(".series__splide-text", {
   perPage: 1,
   perMove: 1,
   autoHeight: true,
+  keyboard: "focused",
   width: "80rem",
   gap: 0,
   padding: 0,
@@ -99,6 +133,7 @@ const comicSplide = new Splide(".comic__splide", {
   rewind: true,
   perPage: 6,
   perMove: 1,
+  keyboard: "focused",
   gap: "3rem",
   pagination: false,
   width: "100%",

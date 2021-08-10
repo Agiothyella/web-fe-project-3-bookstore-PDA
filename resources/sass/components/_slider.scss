@@ -107,14 +107,14 @@
 }
 
 .splide--nav > .splide__track > .splide__list > .splide__slide {
-  border: 3px solid #fff;
+  border-bottom: 3px solid $color-light-1;
   cursor: pointer;
-  opacity: 0.7;
+  opacity: 0.8;
   border-radius: 4px;
 }
 
 .splide--nav > .splide__track > .splide__list > .splide__slide.is-active {
-  border-color: #20b2aa;
+  border-color: $color-secondary;
   opacity: 1;
 }
 
@@ -221,10 +221,11 @@
 }
 
 .splide__description {
+  margin: 0 6rem;
+  text-align: center;
 }
 
 .splide__img {
-  display: block;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -232,7 +233,7 @@
   max-height: 100%;
 
   &--large {
-    margin: 0 7rem;
+    margin: 0 15rem;
     justify-content: flex-start;
   }
 
