@@ -1,5 +1,20 @@
 `use strict`;
 
+const trendingSplide = new Splide(".trending__splide", {
+  type: "loop",
+  rewind: true,
+  perPage: 3,
+  perMove: 3,
+  pagination: false,
+  arrows: false,
+  height: "50rem",
+  keyboard: "focused",
+  autoplay: true,
+  interval: 15000,
+  pauseOnHover: false,
+  pauseOnFocus: false,
+}).mount();
+
 const promotionsSplide = new Splide(".promotions__splide", {
   type: "fade",
   rewind: true,

@@ -98,7 +98,7 @@
 }
 
 .splide__slide {
-  border-radius: 4px;
+  border-radius: 1px;
 }
 
 .splide__spinner {
@@ -109,13 +109,14 @@
 .splide--nav > .splide__track > .splide__list > .splide__slide {
   border-bottom: 3px solid $color-light-1;
   cursor: pointer;
-  opacity: 0.8;
-  border-radius: 4px;
+  opacity: 0.7;
+  border-radius: 1px;
 }
 
 .splide--nav > .splide__track > .splide__list > .splide__slide.is-active {
   border-color: $color-secondary;
   opacity: 1;
+  background-color: $color-light-2;
 }
 
 .splide--nav > .splide__track > .splide__list > .splide__slide:focus {
