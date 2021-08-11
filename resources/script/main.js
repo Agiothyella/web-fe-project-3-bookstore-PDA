@@ -79,6 +79,7 @@ const newSplideNav = new Splide(".new__splide-nav", {
   gap: "2rem",
   pagination: false,
   width: "100%",
+  drag: false,
   autoHeight: true,
   padding: {
     left: "2rem",

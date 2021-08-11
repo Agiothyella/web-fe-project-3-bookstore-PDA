@@ -3,6 +3,21 @@
     width: 100%;
     height: 100%;
   }
+
+  &__text {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 0;
+
+    &--left {
+      left: 0;
+    }
+
+    &--right {
+      right: 0;
+    }
+  }
 }
 
 .promotions--static {

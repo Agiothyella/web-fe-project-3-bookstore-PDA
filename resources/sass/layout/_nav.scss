@@ -1,4 +1,10 @@
 .nav {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+    align-items: center;
+  }
+
   &__title {
     width: min-content;
 

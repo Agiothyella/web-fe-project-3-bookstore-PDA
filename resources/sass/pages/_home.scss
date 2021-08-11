@@ -14,9 +14,11 @@
 
 .nav {
   grid-column: center-start / center-end;
-  display: grid;
-  grid-template-columns: max-content 1fr max-content;
-  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: max-content;
 }
 
 .trending {

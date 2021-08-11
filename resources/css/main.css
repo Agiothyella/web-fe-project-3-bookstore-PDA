@@ -310,11 +310,22 @@ img {
   justify-content: flex-start;
 }
 
-.splide__add-cart {
+.splide__add-cart--absolute {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.splide__add-cart--bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.splide__add-cart--relative {
+  position: relative;
 }
 
 .splide__text {
@@ -367,6 +378,12 @@ img {
 .comic__splide {
   width: 100%;
   padding: 0 3rem;
+}
+
+.nav__wrapper {
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  align-items: center;
 }
 
 .nav__title {
@@ -525,6 +542,21 @@ img {
   height: 100%;
 }
 
+.promotions__text {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  top: 0;
+}
+
+.promotions__text--left {
+  left: 0;
+}
+
+.promotions__text--right {
+  right: 0;
+}
+
 .series__splide {
   width: 100%;
   padding: 0 3rem;
@@ -551,11 +583,11 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  height: 80%;
+  height: 70%;
   background-image: url("../img/top-bg.jpg");
   background-size: cover;
   background-attachment: fixed;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 20px 20px -15px rgba(0, 0, 0, 0.2) inset, 0px -20px 20px -15px rgba(0, 0, 0, 0.2) inset;
 }
 
 .trending__wrapper {
@@ -589,9 +621,11 @@ img {
 
 .nav {
   grid-column: center-start / center-end;
-  display: grid;
-  grid-template-columns: max-content 1fr max-content;
-  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: max-content;
 }
 
 .trending {
