@@ -4,3 +4,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+@mixin resetLink {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+}

@@ -25,38 +25,60 @@
   grid-column: filll-start / fillr-end;
   position: relative;
   width: 100%;
+  margin: 3rem 0 2.5rem 0;
+  background-image: linear-gradient(
+    to bottom right,
+    $color-light-2,
+    $color-primary
+  );
 }
 
 .promotions {
   grid-column: filll-start / fillr-end;
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  margin: 6rem 0 5rem 0;
 }
 
-.promotions--static {
+.promotions-static {
   grid-column: center-start / center-end;
   width: 100%;
   height: 40rem;
+  margin: 5rem 0 5rem 0;
 }
 
 .category {
   grid-column: center-start / center-end;
   width: 100%;
+  margin: 2rem 0;
+  padding: 5rem 0;
+  border-top: 1px solid $color-dark-1;
+  border-bottom: 1px solid $color-dark-1;
+  background-image: linear-gradient(
+    to top,
+    rgba($color-light-2, 0.3),
+    $color-primary
+  );
 }
 
 .picks {
   position: relative;
   grid-column: center-start / center-end;
   width: 100%;
+  margin: 5rem 0 5rem 0;
 }
 
 .new {
   grid-column: center-start / center-end;
   width: 100%;
+  margin: 10rem 0 10rem 0;
 }
 
 .top {
   grid-column: center-start / center-end;
   width: 100%;
+  margin: 10rem 0 10rem 0;
 }
 
 .series {

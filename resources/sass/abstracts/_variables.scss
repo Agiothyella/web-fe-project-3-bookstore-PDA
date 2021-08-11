@@ -7,13 +7,20 @@ $color-tertiary: #de3c3c;
 
 $color-light-1: #fff;
 $color-light-2: rgb(235, 235, 235);
-$color-light-3: rgb(190, 190, 190);
+$color-light-3: rgb(200, 200, 200);
 $color-dark-1: #000;
 $color-dark-2: rgb(20, 20, 20);
 
 $color-font-dark: #000;
-$color-font-grey: rgb(70, 70, 70);
+$color-font-grey-darker: rgb(35, 35, 35);
+$color-font-grey-dark: rgb(40, 40, 40);
+$color-font-grey-ligter: rgb(100, 100, 100);
 $color-font-light: #fff;
+
+// FONTS
+$font-andada: "Andada Pro", serif;
+$font-playfair: "Playfair Display", serif;
+$font-lato: "Lato", sans-serif;
 
 // BREAKPOINTS
 $bp-infinite: 112.5em; //1800px

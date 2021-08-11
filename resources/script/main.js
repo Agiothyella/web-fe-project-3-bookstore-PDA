@@ -7,14 +7,19 @@ const trendingSplide = new Splide(".trending__splide", {
   perMove: 3,
   pagination: false,
   arrows: false,
-  height: "50rem",
+  autoHeight: true,
+  gap: "5rem",
   keyboard: "focused",
   autoplay: true,
   interval: 15000,
   speed: 4000,
   waitForTransition: false,
-  pauseOnHover: false,
+  pauseOnHover: true,
   pauseOnFocus: false,
+  padding: {
+    left: "2rem",
+    right: "2rem",
+  },
 }).mount();
 
 const promotionsSplide = new Splide(".promotions__splide", {
@@ -25,7 +30,7 @@ const promotionsSplide = new Splide(".promotions__splide", {
   keyboard: "focused",
   autoplay: true,
   interval: 10000,
-  pauseOnHover: false,
+  pauseOnHover: true,
   pauseOnFocus: false,
 }).mount();
 
@@ -36,9 +41,12 @@ const picksSplide = new Splide(".picks__splide", {
   padding: 0,
   height: "43rem",
   keyboard: "focused",
+  autoplay: true,
+  interval: 20000,
   pagination: false,
   arrows: false,
   drag: false,
+  pauseOnFocus: false,
 });
 
 const picksSplideNav = new Splide(".picks__splide-nav", {
@@ -47,7 +55,7 @@ const picksSplideNav = new Splide(".picks__splide-nav", {
   pagination: false,
   arrows: false,
   direction: "ttb",
-  height: "5rem",
+  height: "10rem",
   keyboard: "focused",
   autoWidth: true,
 }).mount();

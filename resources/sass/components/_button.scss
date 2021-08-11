@@ -1,0 +1,21 @@
+.btn__flat {
+  &:link,
+  &:visited {
+    @include resetLink;
+
+    padding: 1rem 2rem;
+    border: 2px solid $color-secondary;
+    border-radius: 2.5px;
+    color: $color-secondary;
+    font-family: $font-lato;
+    text-transform: uppercase;
+    transition: all 0.1s;
+  }
+
+  &:hover,
+  &:active {
+    border: 2px solid $color-primary;
+    background-color: $color-secondary;
+    color: $color-primary;
+  }
+}
