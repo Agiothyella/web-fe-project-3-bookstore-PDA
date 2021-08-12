@@ -34,8 +34,11 @@
   outline: none;
 }
 
+.splide__arrow:disabled svg {
+  fill: $color-light-3;
+}
+
 .splide__arrow--prev {
-  // left: 1em;
   left: 0;
 }
 
@@ -44,7 +47,6 @@
 }
 
 .splide__arrow--next {
-  // right: 1em;
   right: 0;
 }
 
@@ -124,7 +126,6 @@
 .splide--nav > .splide__track > .splide__list > .splide__slide.is-active {
   border-color: $color-secondary;
   opacity: 1;
-  background-color: $color-light-2;
 }
 
 .splide--nav > .splide__track > .splide__list > .splide__slide:focus {
@@ -208,23 +209,15 @@
 }
 
 .splide__add-cart {
+  text-align: center;
+
   &--absolute {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 95%;
-    border-radius: 0 !important;
-    text-align: center;
+    width: 75%;
     transform: translate(-50%, -50%);
-    background-color: $color-primary;
-  }
-
-  &--bottom {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: transparent;
+    background-color: rgba($color-primary, 0.75);
   }
 
   &--relative {
@@ -235,21 +228,46 @@
 .splide__text {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
+  font-family: $font-andada;
+  text-align: center;
 }
 
 .splide__title {
+  width: 100%;
+  border-bottom: 1px solid $color-secondary;
+  margin-bottom: 0.2rem;
+  padding: 0 0.5rem;
+  font-size: 1.4rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  a {
+    white-space: nowrap;
+  }
 }
 
 .splide__author {
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
 }
 
 .splide__rating {
+  color: $color-font-gold;
+  font-family: $font-lato;
+  font-weight: 600;
+}
+
+.splide__genre {
+  font-size: 1.1rem;
+  margin-bottom: 0.1rem;
 }
 
 .splide__description {
   margin: 0 6rem;
-  text-align: center;
+  text-align: justify;
+  color: $color-font-grey-dark;
 }
 
 .splide__img {
@@ -260,11 +278,25 @@
   max-height: 100%;
 
   &--large {
-    margin: 0 15rem;
+    margin: 0 17rem;
     justify-content: flex-start;
   }
 
   img {
     width: 100%;
+  }
+}
+
+.splide__link {
+  &:link,
+  &:visited {
+    @include resetLink;
+
+    color: $color-font-grey-dark;
+  }
+
+  &:hover,
+  &:active {
+    color: $color-secondary;
   }
 }

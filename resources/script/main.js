@@ -34,6 +34,14 @@ const promotionsSplide = new Splide(".promotions__splide", {
   pauseOnFocus: false,
 }).mount();
 
+const categorySplide = new Splide(".category__splide", {
+  perPage: 9,
+  perMove: 1,
+  autoHeight: true,
+  keyboard: "focused",
+  pagination: false,
+}).mount();
+
 const picksSplide = new Splide(".picks__splide", {
   type: "fade",
   perPage: 1,
@@ -52,25 +60,28 @@ const picksSplide = new Splide(".picks__splide", {
 const picksSplideNav = new Splide(".picks__splide-nav", {
   perPage: 2,
   isNavigation: true,
+  direction: "ttb",
+  height: "12rem",
+  gap: "3rem",
   pagination: false,
   arrows: false,
-  direction: "ttb",
-  height: "10rem",
-  keyboard: "focused",
+  keyboard: false,
+  drag: false,
   autoWidth: true,
 }).mount();
 
 picksSplide.sync(picksSplideNav).mount();
 
 const newSplide = new Splide(".new__splide", {
-  type: "loop",
+  type: "fade",
   rewind: true,
   perPage: 1,
   perMove: 1,
   keyboard: "focused",
-  autoHeight: true,
+  height: "32rem",
   pagination: false,
   arrows: false,
+  drag: false,
   cover: true,
   gap: "5rem",
   speed: 600,
@@ -104,6 +115,7 @@ const topSplide = new Splide(".top__splide", {
   perPage: 2,
   perMove: 2,
   pagination: false,
+  drag: false,
   width: "100%",
   autoHeight: true,
   grid: {
@@ -115,7 +127,7 @@ const topSplide = new Splide(".top__splide", {
     ],
     gap: {
       row: "1rem",
-      col: "5rem",
+      col: "10rem",
     },
   },
 }).mount(window.splide.Extensions);

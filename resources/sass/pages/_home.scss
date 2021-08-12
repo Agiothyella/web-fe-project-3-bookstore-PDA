@@ -13,12 +13,14 @@
 }
 
 .nav {
-  grid-column: center-start / center-end;
+  grid-column: filll-start / fillr-end;
+  z-index: 5;
   position: sticky;
   top: 0;
   left: 0;
   width: 100%;
   height: max-content;
+  // background-color: $color-primary;
 }
 
 .trending {
@@ -45,19 +47,19 @@
   grid-column: center-start / center-end;
   width: 100%;
   height: 40rem;
-  margin: 5rem 0 5rem 0;
+  margin: 5rem 0;
 }
 
 .category {
   grid-column: center-start / center-end;
   width: 100%;
-  margin: 2rem 0;
-  padding: 5rem 0;
-  border-top: 1px solid $color-dark-1;
-  border-bottom: 1px solid $color-dark-1;
+  margin: 2rem 0 4rem 0;
+  padding: 3rem 0;
+  border-top: 1px solid $color-font-grey-darker;
+  border-bottom: 1px solid $color-font-grey-darker;
   background-image: linear-gradient(
     to top,
-    rgba($color-light-2, 0.3),
+    rgba($color-light-2, 0.5),
     $color-primary
   );
 }
@@ -66,19 +68,19 @@
   position: relative;
   grid-column: center-start / center-end;
   width: 100%;
-  margin: 5rem 0 5rem 0;
+  margin: 5rem 0;
 }
 
 .new {
   grid-column: center-start / center-end;
   width: 100%;
-  margin: 10rem 0 10rem 0;
+  margin: 6rem 0 10rem 0;
 }
 
 .top {
   grid-column: center-start / center-end;
   width: 100%;
-  margin: 10rem 0 10rem 0;
+  margin: 4rem 0 10rem 0;
 }
 
 .series {

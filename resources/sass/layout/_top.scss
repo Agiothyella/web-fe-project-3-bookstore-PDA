@@ -1,6 +1,47 @@
 .top {
+  &__header {
+    width: max-content;
+    margin-bottom: 5rem;
+    padding: 0.5rem 2rem 0 5rem;
+    border-bottom: 2px solid $color-secondary;
+    color: $color-font-dark;
+    font-family: $font-playfair;
+  }
+
   &__splide {
     width: 100%;
-    padding: 0 8rem;
+    padding: 0.5rem 8rem 1rem 8rem;
+    background-image: linear-gradient(to right, $color-light-2, $color-primary);
+  }
+
+  &__big {
+    .splide__title {
+      width: max-content;
+      font-size: 1.8rem;
+    }
+
+    .splide__author {
+      font-size: 1.4rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .splide__rating {
+      color: $color-font-gold;
+      font-family: $font-lato;
+      font-weight: 600;
+    }
+
+    .splide__genre {
+      font-size: 1.2rem;
+    }
+
+    .splide__description {
+      padding: 0.2rem 0 0.4rem 1.5rem;
+      margin: 1rem 10rem 1rem 10rem;
+      border-left: 1px solid $color-secondary;
+      font-family: $font-lato;
+      font-size: 1.1rem;
+      line-height: 1.8rem;
+    }
   }
 }
