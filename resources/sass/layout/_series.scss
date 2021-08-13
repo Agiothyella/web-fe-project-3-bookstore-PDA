@@ -11,7 +11,49 @@
     &__text {
       display: inline-block;
       width: 100%;
+      padding: 4rem 2rem 1rem 2rem;
       text-align: center;
+
+      &:link,
+      &:visited {
+        @include resetLink;
+
+        color: $color-font-grey-dark;
+        font-family: $font-andada;
+        font-size: 2rem;
+      }
+
+      span {
+        display: block;
+        margin-top: 1rem;
+        color: $color-font-grey-lighter;
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  &__more {
+    text-align: center;
+    margin: 2rem 0 3rem 0;
+
+    a {
+      &:link,
+      &:visited {
+        @include resetLink;
+
+        padding: 0.2rem;
+        border-bottom: 1px solid transparent;
+        color: $color-font-grey-dark;
+        font-family: $font-andada;
+        font-size: 1.1rem;
+        transition: all 0.1s;
+      }
+
+      &:hover,
+      &:active {
+        border-bottom: 1px solid $color-secondary;
+        color: $color-secondary;
+      }
     }
   }
 }

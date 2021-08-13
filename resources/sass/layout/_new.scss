@@ -1,7 +1,6 @@
 .new {
   &__header {
     width: max-content;
-    margin-bottom: 5rem;
     padding: 0.5rem 2rem 0 5rem;
     border-bottom: 2px solid $color-secondary;
     color: $color-font-dark;
@@ -27,11 +26,10 @@
     margin: 0 15rem 0 18rem;
     padding: 1rem 2rem 0.5rem 4px;
     border-left: 3px solid $color-secondary;
-    background-image: linear-gradient(
-      to top right,
-      $color-light-2,
-      $color-primary
-    );
+    background-image: url("../img/bg-new.png"),
+      linear-gradient(to top right, $color-light-2, $color-primary);
+    background-position: top right;
+    background-repeat: no-repeat;
   }
 
   &__img {

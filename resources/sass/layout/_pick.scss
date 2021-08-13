@@ -50,7 +50,11 @@
     left: 0;
     width: 25%;
     height: 43rem;
-    background-color: rgba($color-light-2, 0.95);
+    background-image: linear-gradient(
+      to top right,
+      rgba($color-light-2, 0.9),
+      rgba($color-light-1, 0.9)
+    );
     box-shadow: inset 5px 0px 15px $color-light-3;
     font-family: $font-lato;
 

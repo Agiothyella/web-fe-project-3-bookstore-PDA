@@ -44,21 +44,23 @@ const categorySplide = new Splide(".category__splide", {
 
 const picksSplide = new Splide(".picks__splide", {
   type: "fade",
+  rewind: true,
   perPage: 1,
   gap: 0,
   padding: 0,
   height: "43rem",
-  keyboard: "focused",
-  autoplay: true,
-  interval: 20000,
+  keyboard: false,
   pagination: false,
   arrows: false,
   drag: false,
+  autoplay: true,
+  interval: 20000,
   pauseOnFocus: false,
 });
 
 const picksSplideNav = new Splide(".picks__splide-nav", {
   perPage: 2,
+  rewind: true,
   isNavigation: true,
   direction: "ttb",
   height: "12rem",
@@ -118,6 +120,7 @@ const topSplide = new Splide(".top__splide", {
   drag: false,
   width: "100%",
   autoHeight: true,
+  speed: 600,
   grid: {
     dimensions: [
       [1, 1],

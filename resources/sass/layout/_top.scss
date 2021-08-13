@@ -1,7 +1,6 @@
 .top {
   &__header {
     width: max-content;
-    margin-bottom: 5rem;
     padding: 0.5rem 2rem 0 5rem;
     border-bottom: 2px solid $color-secondary;
     color: $color-font-dark;
@@ -11,7 +10,10 @@
   &__splide {
     width: 100%;
     padding: 0.5rem 8rem 1rem 8rem;
-    background-image: linear-gradient(to right, $color-light-2, $color-primary);
+    background-image: url("../img/bg-top.png"),
+      linear-gradient(to right, rgba($color-light-2, 0.5), $color-primary);
+    background-position: bottom left;
+    background-repeat: no-repeat;
   }
 
   &__big {
@@ -37,11 +39,15 @@
 
     .splide__description {
       padding: 0.2rem 0 0.4rem 1.5rem;
-      margin: 1rem 10rem 1rem 10rem;
+      margin: 1rem 10rem 2.5rem 10rem;
       border-left: 1px solid $color-secondary;
       font-family: $font-lato;
       font-size: 1.1rem;
       line-height: 1.8rem;
+    }
+
+    .splide__add-cart {
+      padding: 0.7rem 1.5rem;
     }
   }
 }

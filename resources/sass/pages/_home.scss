@@ -28,11 +28,10 @@
   position: relative;
   width: 100%;
   margin: 3rem 0 2.5rem 0;
-  background-image: linear-gradient(
-    to bottom right,
-    $color-light-2,
-    $color-primary
-  );
+  background-image: url("../img/bg-head.png"),
+    linear-gradient(to bottom right, $color-light-2, $color-primary);
+  background-position: bottom left;
+  background-repeat: no-repeat;
 }
 
 .promotions {
@@ -40,7 +39,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin: 6rem 0 5rem 0;
+  margin: 6rem 0 2rem 0;
 }
 
 .promotions-static {
@@ -53,13 +52,13 @@
 .category {
   grid-column: center-start / center-end;
   width: 100%;
-  margin: 2rem 0 4rem 0;
+  margin: 0 0 4rem 0;
   padding: 3rem 0;
   border-top: 1px solid $color-font-grey-darker;
   border-bottom: 1px solid $color-font-grey-darker;
   background-image: linear-gradient(
     to top,
-    rgba($color-light-2, 0.5),
+    rgba($color-light-2, 0.3),
     $color-primary
   );
 }
@@ -74,7 +73,7 @@
 .new {
   grid-column: center-start / center-end;
   width: 100%;
-  margin: 6rem 0 10rem 0;
+  margin: 6rem 0 4rem 0;
 }
 
 .top {
@@ -86,13 +85,48 @@
 .series {
   grid-column: center-start / center-end;
   width: 100%;
+  padding: 4rem 0 0 0;
+  border-top: 1px solid $color-secondary;
+  border-bottom: 1px solid $color-secondary;
+  background-image: linear-gradient(
+    to top left,
+    rgba($color-light-2, 0.3),
+    $color-primary
+  );
 }
 
 .comic {
   grid-column: center-start / center-end;
   width: 100%;
+  margin: 10rem 0 0 0;
 }
 
 .footer {
   grid-column: filll-start / fillr-end;
+}
+
+.section__head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 5rem;
+}
+
+.section__more {
+  padding: 0.5rem 0 0.2rem 0;
+  margin-right: 10rem;
+
+  &:link,
+  &:visited {
+    @include resetLink;
+
+    font-family: $font-playfair;
+    font-size: 1.1rem;
+  }
+
+  &:hover,
+  &:active {
+    color: $color-secondary;
+  }
 }
