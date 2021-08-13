@@ -1,4 +1,8 @@
 .trending {
+  &__splide {
+    cursor: grab;
+  }
+
   &__header {
     width: max-content;
     margin-top: 4rem;
@@ -90,7 +94,9 @@
     &:link,
     &:visited {
       @include resetLink;
+
       transition: all 0.1s;
+      color: $color-font-dark;
     }
 
     &:hover,

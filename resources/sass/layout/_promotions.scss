@@ -22,6 +22,7 @@
     &:link,
     &:visited {
       @include resetLink;
+      color: $color-font-dark;
     }
   }
 

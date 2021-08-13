@@ -19,15 +19,16 @@
   top: 0;
   left: 0;
   width: 100%;
+  padding-bottom: 1.5rem;
   height: max-content;
-  // background-color: $color-primary;
+  background-color: $color-primary;
 }
 
 .trending {
   grid-column: filll-start / fillr-end;
   position: relative;
   width: 100%;
-  margin: 3rem 0 2.5rem 0;
+  margin: 0 0 2.5rem 0;
   background-image: url("../img/bg-head.png"),
     linear-gradient(to bottom right, $color-light-2, $color-primary);
   background-position: bottom left;
@@ -40,13 +41,6 @@
   flex-direction: column;
   width: 100%;
   margin: 6rem 0 2rem 0;
-}
-
-.promotions-static {
-  grid-column: center-start / center-end;
-  width: 100%;
-  height: 40rem;
-  margin: 5rem 0;
 }
 
 .category {
@@ -79,7 +73,7 @@
 .top {
   grid-column: center-start / center-end;
   width: 100%;
-  margin: 4rem 0 10rem 0;
+  margin: 8rem 0 10rem 0;
 }
 
 .series {
@@ -98,7 +92,14 @@
 .comic {
   grid-column: center-start / center-end;
   width: 100%;
-  margin: 10rem 0 0 0;
+  margin: 10rem 0 6rem 0;
+}
+
+.promotions-static {
+  grid-column: center-start / center-end;
+  width: 100%;
+  height: 40rem;
+  margin: 5rem 0 10rem 0;
 }
 
 .footer {
@@ -115,14 +116,16 @@
 
 .section__more {
   padding: 0.5rem 0 0.2rem 0;
-  margin-right: 10rem;
+  margin-right: 6rem;
 
   &:link,
   &:visited {
     @include resetLink;
 
-    font-family: $font-playfair;
+    color: $color-font-grey-dark;
+    font-family: $font-lato;
     font-size: 1.1rem;
+    text-transform: uppercase;
   }
 
   &:hover,

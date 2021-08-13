@@ -11,7 +11,7 @@ const trendingSplide = new Splide(".trending__splide", {
   gap: "5rem",
   keyboard: "focused",
   autoplay: true,
-  interval: 15000,
+  interval: 12000,
   speed: 4000,
   waitForTransition: false,
   pauseOnHover: true,

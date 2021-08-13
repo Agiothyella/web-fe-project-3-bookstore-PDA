@@ -25,38 +25,40 @@
           </a>
         </div>
         <div class="nav__menu">
-          <form action="#" class="c-search-bar">
+          <form action="#" class="nav__search c-search-bar">
             <input
               type="text"
               class="c-search-bar__input"
               placeholder="Search Books"
             />
             <button class="c-search-bar__button">
-              <img src="resources/icon/search.svg" alt="Search" />
+              <img src="vendors/icon/search.svg" alt="Search" />
             </button>
           </form>
           <div class="nav__disc">
-            <ul class="nav__list">
+            <ul class="nav__list nav__list--disc">
               <li class="nav__item">
-                <a href="#" class="nav__link">Coupons & Deals</a>
+                <a href="#" class="nav__link nav__link--disc"
+                  >Coupons & Deals</a
+                >
               </li>
-              <li class="nav__disc__item">
-                <a href="#" class="nav__link">Gift Cards</a>
+              <li class="nav__item">
+                <a href="#" class="nav__link nav__link--disc">Gift Cards</a>
               </li>
-              <li class="nav__disc__item">
-                <a href="#" class="nav__link">Membership</a>
+              <li class="nav__item">
+                <a href="#" class="nav__link nav__link--disc">Membership</a>
               </li>
             </ul>
           </div>
         </div>
         <div class="nav__shop">
-          <div class="nav__cart">
-            <a href="#" class="nav__link"
-              ><img src="resources/icon/cart.svg" alt="Cart"
-            /></a>
-          </div>
           <div class="nav__wishlist">
             <a href="#" class="nav__link">Wishlist</a>
+          </div>
+          <div class="nav__cart">
+            <a href="#" class="nav__link"
+              ><img src="vendors/icon/cart.svg" alt="Cart"
+            /></a>
           </div>
           <a href="#" class="nav__member nav__link">
             <p>Hart</p>
@@ -68,26 +70,26 @@
         </div>
         <div class="nav__more">
           <ul class="nav__list nav__list--more">
-            <li class="nav__item">
-              <a href="#" class="nav__link">Audiobooks</a>
+            <li class="nav__item nav__item--more">
+              <a href="#" class="nav__link nav__link--more">Audiobooks</a>
             </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">eBooks</a>
+            <li class="nav__item nav__item--more">
+              <a href="#" class="nav__link nav__link--more">eBooks</a>
             </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Coming Soon</a>
+            <li class="nav__item nav__item--more">
+              <a href="#" class="nav__link nav__link--more">Coming Soon</a>
             </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Signed Edition</a>
+            <li class="nav__item nav__item--more">
+              <a href="#" class="nav__link nav__link--more">Signed Edition</a>
             </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Authors</a>
+            <li class="nav__item nav__item--more">
+              <a href="#" class="nav__link nav__link--more">Authors</a>
             </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Non-English</a>
+            <li class="nav__item nav__item--more">
+              <a href="#" class="nav__link nav__link--more">Non-English</a>
             </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Blog</a>
+            <li class="nav__item nav__item--more">
+              <a href="#" class="nav__link nav__link--more">Blog</a>
             </li>
           </ul>
         </div>
@@ -1640,9 +1642,7 @@
 
     <section id="comic" class="comic">
       <div class="section__head">
-        <h3 class="t-header-3 top__header">
-          Best Selling Books to Brag to Your Friends
-        </h3>
+        <h3 class="t-header-3 top__header">Comics & Manga</h3>
         <a href="#new" class="section__more">See more</a>
       </div>
       <div class="comic__splide splide">
@@ -1873,191 +1873,197 @@
     </section>
 
     <footer class="footer">
-      <div class="footer__promo">
-        <div class="footer__promo__list">
-          <div class="footer__promo__title">Use Bank Agiothyella&reg; Card</div>
-          <div class="footer__promo__content">5% Back on all purchases</div>
-          <div class="c-button">Learn More &rarr;</div>
-        </div>
-        <div class="footer__promo__list">
-          <div class="footer__promo__title">
-            Download Agiothyella Bookstore App
+      <div class="footer__wrapper">
+        <div class="footer__promo">
+          <div class="footer__promo__list">
+            <div class="footer__promo__title">
+              Use Bank Agiothyella&reg; Card
+            </div>
+            <div class="footer__promo__content">5% Back on all purchases</div>
+            <a href="#" class="btn__small">Learn More &rarr;</a>
           </div>
-          <div class="footer__promo__content">Buy & read eBooks online</div>
-          <div class="c-button">Learn More &rarr;</div>
-        </div>
-        <div class="footer__promo__list">
-          <div class="footer__promo__title">Special Hardcover for Members</div>
-          <div class="footer__promo__content">
-            Get hardcover version for regular price only for members
+          <div class="footer__promo__list">
+            <div class="footer__promo__title">
+              Download Agiothyella Bookstore App
+            </div>
+            <div class="footer__promo__content">Buy & read eBooks online</div>
+            <a href="#" class="btn__small">Learn More &rarr;</a>
           </div>
-          <div class="c-button">Learn More &rarr;</div>
-        </div>
-        <div class="footer__promo__list">
-          <div class="footer__promo__title">Member Free Shipping</div>
-          <div class="footer__promo__content">
-            Free shipping across EU for members
+          <div class="footer__promo__list">
+            <div class="footer__promo__title">
+              Special Hardcover for Members
+            </div>
+            <div class="footer__promo__content">
+              Get hardcover version for regular price only for members
+            </div>
+            <a href="#" class="btn__small">Learn More &rarr;</a>
           </div>
-          <div class="c-button">Learn More &rarr;</div>
+          <div class="footer__promo__list">
+            <div class="footer__promo__title">Member Free Shipping</div>
+            <div class="footer__promo__content">
+              Free shipping across EU for members
+            </div>
+            <a href="#" class="btn__small">Learn More &rarr;</a>
+          </div>
         </div>
-      </div>
-      <div class="footer__copyright">Copyright&copy; 2021 Agiothyella</div>
-      <div class="footer__social">
-        <ul class="footer__social__list">
+        <div class="footer__copyright">Copyright&copy; 2021 Agiothyella</div>
+        <ul class="footer__social">
           <li class="footer__social__item">
-            <a href="#" class="footer__social__link"
-              ><svg class="header__logo">
+            <a href="#"
+              ><svg class="footer__social__icon footer__social__icon--facebook">
                 <use
                   xlink:href="vendors/icon/icomoon/social.svg#icon-facebook"
                 ></use></svg
             ></a>
           </li>
           <li class="footer__social__item">
-            <a href="#" class="footer__social__link"
-              ><svg class="header__logo">
+            <a href="#"
+              ><svg class="footer__social__icon footer__social__icon--twitter">
                 <use
                   xlink:href="vendors/icon/icomoon/social.svg#icon-twitter"
                 ></use></svg
             ></a>
           </li>
           <li class="footer__social__item">
-            <a href="#" class="footer__social__link"
-              ><svg class="header__logo">
+            <a href="#"
+              ><svg
+                class="footer__social__icon footer__social__icon--instagram"
+              >
                 <use
                   xlink:href="vendors/icon/icomoon/social.svg#icon-instagram"
                 ></use></svg
             ></a>
           </li>
         </ul>
-      </div>
-      <div class="footer__newsletter">
-        <div class="footer__newsletter__title">
-          Subscribe for news, updates, and promos
+        <div class="footer__newsletter">
+          <div class="footer__newsletter__title">
+            Subscribe for news, updates, and promos
+          </div>
+          <form action="#" class="footer__newsletter__form">
+            <input
+              id="footer__newsletter__input"
+              type="email"
+              class="footer__newsletter__input"
+              placeholder="Email Address"
+            />
+            <!-- <label for="footer__newsletter__input">Email Address</label> -->
+            <button class="footer__newsletter__button">&rsaquo;</button>
+          </form>
+          <p class="footer__newsletter__text">
+            Subscribe to our newsletter to get the news of promo, coupon, new
+            releases, etc. Lorem ipsum dolor sit, amet consectetur elit. Esse ut
+            sint aliquid ullam at dolores maiores, ex doloribus nobis sed!
+          </p>
         </div>
-        <form action="#" class="footer__newsletter__form">
-          <input
-            id="footer__newsletter__input"
-            type="email"
-            class="footer__newsletter__input"
-            placeholder="Email Address"
-          />
-          <label for="footer__newsletter__input">Email Address</label>
-          <button class="footer__newsletter__button">&rsaquo;</button>
-        </form>
-        <p class="footer__newsletter__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-          ullam fugiat quae natus, illum velit culpa ipsa recusandae
-          perspiciatis dicta, hic, saepe sint voluptas exercitationem voluptates
-          est nesciunt. Quod, iste!
-        </p>
-      </div>
-      <div class="footer__menu">
-        <div class="footer__menu__category">
-          <div class="footer__menu__header">About Us</div>
-          <ul class="footer__menu__content">
-            <li class="footer__menu__item">
-              <a href="#" class="footer__menu__link"
-                >About Agiothyella Books, 2021tore</a
-              >
-            </li>
-            <li class="footer__menu__item">
-              <a href="#" class="footer__menu__link">Agiothyella, Inc.</a>
-            </li>
-            <li class="footer__menu__item">
-              <a href="#" class="footer__menu__link">1</a>
-            </li>
-            <li class="footer__menu__item">
-              <a href="#" class="footer__menu__link">Careers at Agiothyella</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__menu__category">
-          <div class="footer__menu__header">Services</div>
-          <ul class="footer__menu__content">
-            <li class="footer__menu__item">
-              <a href="#" class="footer__menu__link">Advertise</a>
-            </li>
-            <li class="footer__menu__item">
-              <a href="#" class="footer__menu__link">Affiliate Program</a>
-            </li>
-            <li class="footer__menu__item">
-              <a href="#" class="footer__menu__link"
-                >Publisher & Author Guidelines</a
-              >
-            </li>
-            <li class="footer__menu__item">
-              <a href="#" class="footer__menu__link">Bulk Order Discounts</a>
-            </li>
-            <li class="footer__menu__item">
-              <a href="#" class="footer__menu__link">Agiothyella Membership</a>
-            </li>
-            <li class="footer__menu__item">
-              <a href="#" class="footer__menu__link">Agiothyella Card</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__menu__category">
-          <div class="footer__menu__header">eBooks</div>
-          <ul class="footer__menu__content">
-            <li class="footer__menu__item">
-              <a href="#" class="footer__menu__link">Kindle</a>
-            </li>
-            <li class="footer__menu__item">
-              <a href="#" class="footer__menu__link">EPUB</a>
-            </li>
-            <li class="footer__menu__item">
-              <a href="#" class="footer__menu__link">Prime Reading</a>
-            </li>
-            <li class="footer__menu__item">
-              <a href="#" class="footer__menu__link">Audiobook</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__menu__category">
-          <div class="footer__menu__header">Language</div>
-          <ul class="footer__menu__content">
-            <li class="footer__menu__item">
-              <a href="#" class="footer__menu__link">English</a>
-            </li>
-            <li class="footer__menu__item">
-              <a href="#" class="footer__menu__link">Spanish</a>
-            </li>
-            <li class="footer__menu__item">
-              <a href="#" class="footer__menu__link">Portuguese</a>
-            </li>
-            <li class="footer__menu__item">
-              <a href="#" class="footer__menu__link">Simplified Chinese</a>
-            </li>
-            <li class="footer__menu__item">
-              <a href="#" class="footer__menu__link">Traditional Chinese</a>
-            </li>
-            <li class="footer__menu__item">
-              <a href="#" class="footer__menu__link">Japanese</a>
-            </li>
-            <li class="footer__menu__item">
-              <a href="#" class="footer__menu__link">Indonesian</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__menu__category">
-          <div class="footer__menu__header">Help</div>
-          <ul class="footer__menu__content">
-            <li class="footer__menu__item">
-              <a href="#" class="footer__menu__link">Help Center</a>
-            </li>
-            <li class="footer__menu__item">
-              <a href="#" class="footer__menu__link">Shipping & Returns</a>
-            </li>
-            <li class="footer__menu__item">
-              <a href="#" class="footer__menu__link">Order & Status</a>
-            </li>
-            <li class="footer__menu__item">
-              <a href="#" class="footer__menu__link">Product Recalls</a>
-            </li>
-            <li class="footer__menu__item">
-              <a href="#" class="footer__menu__link">Corrections & Updates</a>
-            </li>
-          </ul>
+        <div class="footer__menu">
+          <div class="footer__menu__category">
+            <div class="footer__menu__header">About Us</div>
+            <ul class="footer__menu__content">
+              <li class="footer__menu__item">
+                <a href="#" class="footer__menu__link"
+                  >About Agiothyella Bookstore</a
+                >
+              </li>
+              <li class="footer__menu__item">
+                <a href="#" class="footer__menu__link">Agiothyella, Inc.</a>
+              </li>
+              <li class="footer__menu__item">
+                <a href="#" class="footer__menu__link"
+                  >Careers at Agiothyella</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu__category">
+            <div class="footer__menu__header">Services</div>
+            <ul class="footer__menu__content">
+              <li class="footer__menu__item">
+                <a href="#" class="footer__menu__link">Advertise</a>
+              </li>
+              <li class="footer__menu__item">
+                <a href="#" class="footer__menu__link">Affiliate Program</a>
+              </li>
+              <li class="footer__menu__item">
+                <a href="#" class="footer__menu__link"
+                  >Publisher & Author Guidelines</a
+                >
+              </li>
+              <li class="footer__menu__item">
+                <a href="#" class="footer__menu__link">Bulk Order Discounts</a>
+              </li>
+              <li class="footer__menu__item">
+                <a href="#" class="footer__menu__link"
+                  >Agiothyella Membership</a
+                >
+              </li>
+              <li class="footer__menu__item">
+                <a href="#" class="footer__menu__link">Agiothyella Card</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu__category">
+            <div class="footer__menu__header">eBooks</div>
+            <ul class="footer__menu__content">
+              <li class="footer__menu__item">
+                <a href="#" class="footer__menu__link">Kindle</a>
+              </li>
+              <li class="footer__menu__item">
+                <a href="#" class="footer__menu__link">EPUB</a>
+              </li>
+              <li class="footer__menu__item">
+                <a href="#" class="footer__menu__link">Prime Reading</a>
+              </li>
+              <li class="footer__menu__item">
+                <a href="#" class="footer__menu__link">Audiobook</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu__category">
+            <div class="footer__menu__header">Languages</div>
+            <ul class="footer__menu__content">
+              <li class="footer__menu__item">
+                <a href="#" class="footer__menu__link">English</a>
+              </li>
+              <li class="footer__menu__item">
+                <a href="#" class="footer__menu__link">Spanish</a>
+              </li>
+              <li class="footer__menu__item">
+                <a href="#" class="footer__menu__link">Portuguese</a>
+              </li>
+              <li class="footer__menu__item">
+                <a href="#" class="footer__menu__link">Simplified Chinese</a>
+              </li>
+              <li class="footer__menu__item">
+                <a href="#" class="footer__menu__link">Traditional Chinese</a>
+              </li>
+              <li class="footer__menu__item">
+                <a href="#" class="footer__menu__link">Japanese</a>
+              </li>
+              <li class="footer__menu__item">
+                <a href="#" class="footer__menu__link">Indonesian</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu__category">
+            <div class="footer__menu__header">Help</div>
+            <ul class="footer__menu__content">
+              <li class="footer__menu__item">
+                <a href="#" class="footer__menu__link">Help Center</a>
+              </li>
+              <li class="footer__menu__item">
+                <a href="#" class="footer__menu__link">Shipping & Returns</a>
+              </li>
+              <li class="footer__menu__item">
+                <a href="#" class="footer__menu__link">Order & Status</a>
+              </li>
+              <li class="footer__menu__item">
+                <a href="#" class="footer__menu__link">Product Recalls</a>
+              </li>
+              <li class="footer__menu__item">
+                <a href="#" class="footer__menu__link">Corrections & Updates</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>

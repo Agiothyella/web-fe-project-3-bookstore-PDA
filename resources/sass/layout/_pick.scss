@@ -33,6 +33,10 @@
 }
 
 .picks {
+  &__splide {
+    border: 1px solid $color-light-2;
+  }
+
   &__nav {
     &__slide {
       font-size: 3rem !important;
@@ -55,7 +59,7 @@
       rgba($color-light-2, 0.9),
       rgba($color-light-1, 0.9)
     );
-    box-shadow: inset 5px 0px 15px $color-light-3;
+    box-shadow: inset 2px 0 5px $color-light-3;
     font-family: $font-lato;
 
     .splide__track {

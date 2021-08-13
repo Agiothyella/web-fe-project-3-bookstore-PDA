@@ -1,4 +1,8 @@
 .c-search-bar {
+  &__input {
+    width: 80%;
+  }
+
   &__button {
     img {
       height: 1.5rem;

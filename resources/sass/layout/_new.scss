@@ -27,7 +27,7 @@
     padding: 1rem 2rem 0.5rem 4px;
     border-left: 3px solid $color-secondary;
     background-image: url("../img/bg-new.png"),
-      linear-gradient(to top right, $color-light-2, $color-primary);
+      linear-gradient(to bottom right, $color-light-2, $color-primary);
     background-position: top right;
     background-repeat: no-repeat;
   }
@@ -112,12 +112,14 @@
     &:link,
     &:visited {
       @include resetLink;
+
+      color: $color-font-dark;
       transition: color 0.1s;
     }
 
     &:hover,
     &:active {
-      color: $color-secondary;
+      color: $color-tertiary;
     }
   }
 }

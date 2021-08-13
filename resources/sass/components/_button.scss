@@ -19,3 +19,20 @@
     color: $color-primary;
   }
 }
+
+.btn__small {
+  &:link,
+  &:visited {
+    @include resetLink;
+
+    padding: 0.2rem 0;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s;
+  }
+
+  &:hover,
+  &:active {
+    border-bottom: 1px solid $color-secondary;
+    color: $color-secondary;
+  }
+}
