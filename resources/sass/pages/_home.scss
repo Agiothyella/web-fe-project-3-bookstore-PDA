@@ -19,9 +19,10 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding-bottom: 1.5rem;
   height: max-content;
   background-color: $color-primary;
+  border-bottom: 1px solid transparent;
+  transition: border 0.2s;
 }
 
 .trending {

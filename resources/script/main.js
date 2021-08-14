@@ -184,3 +184,21 @@ const comicSplide = new Splide(".comic__splide", {
     right: "2rem",
   },
 }).mount();
+
+const nav = document.querySelector(".nav");
+const navMore = document.querySelector(".nav__more");
+
+function showNav() {
+  let top = window.pageYOffset || document.documentElement.scrollTop;
+  if (top > 1) {
+    nav.classList.add("nav--scroll");
+    navMore.classList.add("nav__more--scroll");
+  } else {
+    nav.classList.remove("nav--scroll");
+    navMore.classList.remove("nav__more--scroll");
+  }
+}
+
+window.onscroll = function () {
+  showNav();
+};

@@ -1,9 +1,30 @@
 .c-search-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+
   &__input {
-    width: 80%;
+    width: 90%;
+    border-radius: 0;
+    border-top-left-radius: 2.5px;
+    border-bottom-left-radius: 2.5px;
+    border: 1px solid $color-font-grey-lighter;
+    border-right: none;
+    padding: 0.5rem 1rem;
+
+    &:focus {
+      outline: none;
+    }
   }
 
   &__button {
+    padding: 0.45rem 0.5rem;
+    border-radius: 0;
+    border-top-right-radius: 2.5px;
+    border-bottom-right-radius: 2.5px;
+    border: 1px solid $color-font-grey-lighter;
+    background-color: $color-light-2;
+
     img {
       height: 1.5rem;
       width: 1.5rem;
