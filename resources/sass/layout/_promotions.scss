@@ -10,6 +10,10 @@
 
     span {
       text-transform: uppercase;
+
+      @media only screen and (max-width: $bp-large) {
+        display: block;
+      }
     }
   }
 
@@ -59,6 +63,10 @@
     font-family: $font-lato;
     line-height: 3.5rem;
     font-weight: 300;
+
+    @media only screen and (max-width: $bp-large) {
+      font-size: 1.6rem;
+    }
   }
 
   &__splide {
@@ -67,6 +75,10 @@
     .splide__arrow {
       opacity: 0;
       transition: all 0.2s;
+
+      @media only screen and (hover: none) {
+        opacity: 1;
+      }
     }
 
     .splide__arrow svg {
@@ -84,6 +96,10 @@
     .splide__pagination {
       opacity: 0;
       transition: all 0.2s;
+
+      @media only screen and (hover: none) {
+        opacity: 1;
+      }
     }
 
     .splide__pagination__page.is-active {

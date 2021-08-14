@@ -44,6 +44,16 @@
       font-family: $font-lato;
       font-size: 1.1rem;
       line-height: 1.8rem;
+
+      @media only screen and (max-width: $bp-larger) {
+        margin: 1rem 7rem 2.5rem 7rem;
+      }
+
+      @media only screen and (max-width: $bp-large) {
+        margin: 1rem 5rem 2.5rem 5rem;
+        font-size: 1.2rem;
+        line-height: 2rem;
+      }
     }
 
     .splide__add-cart {

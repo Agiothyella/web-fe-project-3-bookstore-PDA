@@ -20,6 +20,13 @@ const trendingSplide = new Splide(".trending__splide", {
     left: "2rem",
     right: "2rem",
   },
+
+  breakpoints: {
+    1000: {
+      perPage: 2,
+      perMove: 2,
+    },
+  },
 }).mount();
 
 const promotionsSplide = new Splide(".promotions__splide", {
@@ -40,6 +47,27 @@ const categorySplide = new Splide(".category__splide", {
   autoHeight: true,
   keyboard: "focused",
   pagination: false,
+
+  breakpoints: {
+    1360: {
+      padding: {
+        left: "2rem",
+        right: "2rem",
+      },
+    },
+
+    1200: {
+      perPage: 7,
+    },
+
+    1000: {
+      perPage: 7,
+      padding: {
+        left: "0rem",
+        right: "0rem",
+      },
+    },
+  },
 }).mount();
 
 const picksSplide = new Splide(".picks__splide", {
@@ -106,6 +134,12 @@ const newSplideNav = new Splide(".new__splide-nav", {
     left: "2rem",
     right: "2rem",
   },
+
+  breakpoints: {
+    1200: {
+      perPage: 7,
+    },
+  },
 }).mount();
 
 newSplide.sync(newSplideNav).mount();
@@ -133,6 +167,29 @@ const topSplide = new Splide(".top__splide", {
       col: "10rem",
     },
   },
+
+  breakpoints: {
+    1200: {
+      grid: {
+        gap: {
+          row: "0rem",
+          col: "4rem",
+        },
+      },
+    },
+    1000: {
+      grid: {
+        dimensions: [
+          [1, 1],
+          [2, 1],
+          [2, 2],
+          [1, 1],
+          [2, 2],
+          [2, 1],
+        ],
+      },
+    },
+  },
 }).mount(window.splide.Extensions);
 
 const seriesSplide = new Splide(".series__splide", {
@@ -150,6 +207,22 @@ const seriesSplide = new Splide(".series__splide", {
   padding: {
     right: "30rem",
     left: "30rem",
+  },
+
+  breakpoints: {
+    1200: {
+      padding: {
+        right: "20rem",
+        left: "20rem",
+      },
+    },
+
+    1000: {
+      padding: {
+        right: "15rem",
+        left: "15rem",
+      },
+    },
   },
 });
 
@@ -182,6 +255,12 @@ const comicSplide = new Splide(".comic__splide", {
   padding: {
     left: "2rem",
     right: "2rem",
+  },
+
+  breakpoints: {
+    1000: {
+      perPage: 5,
+    },
   },
 }).mount();
 

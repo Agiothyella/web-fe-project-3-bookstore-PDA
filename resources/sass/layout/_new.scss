@@ -30,6 +30,14 @@
       linear-gradient(to bottom right, $color-light-2, $color-primary);
     background-position: top right;
     background-repeat: no-repeat;
+
+    @media only screen and (max-width: $bp-larger) {
+      margin: 0 9rem 0 12rem;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+      margin: 0 3rem 0 4rem;
+    }
   }
 
   &__img {
@@ -48,6 +56,10 @@
 
     a {
       margin-bottom: 2rem;
+
+      @media only screen and (max-width: $bp-huge) {
+        align-self: flex-end;
+      }
     }
   }
 
@@ -106,6 +118,10 @@
     color: $color-font-grey-dark;
     font-family: $font-lato;
     text-align: justify;
+
+    @media only screen and (max-width: $bp-huge) {
+      margin-bottom: 0.5rem;
+    }
   }
 
   &__link {
