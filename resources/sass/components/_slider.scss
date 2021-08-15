@@ -210,11 +210,19 @@
   &--large {
     justify-content: flex-start;
     row-gap: 1rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      margin: 0 !important;
+    }
   }
 
   &--tall {
     @media only screen and (max-width: $bp-large) {
-      margin: 0 12.3rem;
+      margin: 0 27.3%;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      margin: 0 21%;
     }
   }
 }
@@ -307,6 +315,10 @@
 
     @media only screen and (max-width: $bp-large) {
       margin: 0 5rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      margin: 0 0;
     }
   }
 

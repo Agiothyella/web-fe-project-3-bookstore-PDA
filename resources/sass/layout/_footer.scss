@@ -19,9 +19,14 @@
     margin-bottom: 3rem;
     border-top: 1px solid $color-font-grey-darker;
     border-bottom: 1px solid $color-font-grey-darker;
+    margin: 0 1rem;
 
     @media only screen and (max-width: $bp-large) {
       grid-column: 1 / span 2;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: repeat(2, 1fr);
     }
 
     &__list {
@@ -30,26 +35,39 @@
       justify-content: flex-start;
       align-items: flex-start;
       padding: 2rem;
+      row-gap: 0.5rem;
 
-      &:not(:last-child) {
-        border-right: 1px solid $color-font-grey-darker;
+      @media only screen and (min-width: $bp-medium) {
+        &:not(:last-child) {
+          border-right: 1px solid $color-font-grey-darker;
+        }
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+        &:nth-child(even) {
+          border-left: 1px solid $color-font-grey-darker;
+        }
+
+        &:nth-child(n + 3) {
+          border-top: 1px solid $color-font-grey-darker;
+        }
       }
 
       a {
         font-size: 1rem;
         color: $color-tertiary;
+        margin-top: auto;
       }
     }
 
     &__title {
       text-transform: uppercase;
       font-size: 1.3rem;
-      margin-bottom: 0.5rem;
     }
 
     &__content {
       font-size: 1.2rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
     }
   }
 
@@ -186,6 +204,19 @@
     &__header {
       font-size: 1.7rem;
       color: $color-tertiary;
+      transition: background-color 0.1s;
+
+      @media only screen and (max-width: $bp-medium) {
+        padding: 0.5rem 1.5rem;
+
+        &:hover {
+          background-color: $color-light-2;
+        }
+      }
+
+      .accordion-active {
+        background-color: $color-light-2;
+      }
     }
 
     &__content {

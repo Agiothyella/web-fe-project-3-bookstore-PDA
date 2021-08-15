@@ -12,6 +12,10 @@
     border-right: none;
     padding: 0.5rem 1rem;
 
+    @media only screen and (max-width: $bp-large) {
+      width: 100%;
+    }
+
     &:focus {
       outline: none;
     }

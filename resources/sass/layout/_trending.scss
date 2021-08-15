@@ -13,6 +13,11 @@
     @media only screen and (max-width: $bp-large) {
       padding-left: 5rem;
     }
+
+    @media only screen and (max-width: $bp-medium) {
+      padding-left: 0.5rem;
+      font-size: 3rem;
+    }
   }
 
   &__background {
@@ -67,6 +72,10 @@
       @media only screen and (max-width: $bp-huge) {
         margin-bottom: 3rem;
       }
+
+      @media only screen and (max-width: $bp-medium) {
+        margin-bottom: 1rem;
+      }
     }
   }
 
@@ -100,6 +109,10 @@
     padding-left: 1rem;
     color: $color-font-grey-dark;
     font-size: 1.2rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      margin: 0.2rem 0 3rem 0;
+    }
   }
 
   &__rating {

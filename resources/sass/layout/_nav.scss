@@ -11,6 +11,10 @@
     margin: 0 auto;
     padding: 0 2rem;
     max-width: 150rem;
+
+    @media only screen and (max-width: $bp-large) {
+      grid-template-columns: repeat(2, max-content) 1fr max-content;
+    }
   }
 
   &__title {
@@ -42,6 +46,10 @@
 
   &__search {
     flex: 1 0;
+
+    @media only screen and (max-width: $bp-large) {
+      display: none;
+    }
   }
 
   &__disc {
@@ -109,6 +117,10 @@
     border-bottom: 1px solid $color-light-3;
     transition: all 0.5s;
 
+    @media only screen and (max-width: $bp-large) {
+      padding: 1.2rem 0;
+    }
+
     &--scroll {
       border-bottom: 1px solid transparent;
       opacity: 0;
@@ -122,6 +134,10 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    @media only screen and (max-width: $bp-large) {
+      display: none;
+    }
 
     &--more {
     }
@@ -165,5 +181,214 @@
       width: max-content;
       padding: 0 1rem;
     }
+  }
+}
+
+.nav {
+  &__side {
+    display: none;
+    height: 60%;
+    width: max-content;
+    cursor: pointer;
+    margin-right: 3rem;
+
+    @media only screen and (max-width: $bp-large) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    &__icon {
+      height: 3rem;
+      width: 3rem;
+    }
+  }
+
+  &__sidebar {
+    display: none;
+    position: fixed;
+    left: -100%;
+    height: 100%;
+    z-index: 7;
+    transition: left 0.2s;
+
+    @media only screen and (max-width: $bp-large) {
+      display: block;
+    }
+
+    &__main {
+      display: none;
+
+      @media only screen and (max-width: $bp-smaller) {
+        display: block;
+      }
+    }
+
+    &__back {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      background-color: rgba($color-dark-2, 0.7);
+      opacity: 0;
+      visibility: hidden;
+      z-index: 7;
+      transition: opacity 0.1s;
+
+      @media only screen and (max-width: $bp-large) {
+        display: block;
+      }
+    }
+
+    &__menu {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      height: 100%;
+      width: 40vw;
+      background-color: $color-primary;
+      border-right: 1px solid $color-tertiary;
+      overflow-y: scroll;
+
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+        min-width: 36rem;
+      }
+    }
+
+    &__search {
+      input {
+        border-radius: 0;
+        padding: 1rem;
+        border-color: $color-primary;
+      }
+
+      button {
+        padding: 1rem;
+        border-radius: 0;
+        background-color: $color-light-1;
+        border-color: $color-primary;
+      }
+    }
+  }
+
+  &__sideclose {
+    font-size: 6rem;
+    padding: 0 1rem;
+    border-bottom: 3px solid $color-tertiary;
+    background-color: $color-secondary;
+    color: $color-primary;
+    cursor: pointer;
+    transition: color 0.1s;
+
+    &:hover {
+      color: $color-dark-2;
+    }
+  }
+
+  &__sidelist {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &--disc {
+      height: 100%;
+      padding-top: 2rem;
+      background-color: $color-tertiary;
+    }
+
+    &--more {
+      margin-bottom: 0.5rem;
+    }
+
+    &--account {
+      margin-bottom: 0.5rem;
+      border-bottom: 4px solid $color-tertiary;
+    }
+  }
+
+  &__sideitem {
+    width: 100%;
+
+    &--disc {
+      margin: 0.1rem 0;
+    }
+
+    &--more {
+      margin-bottom: 0.2rem;
+      border-top: 1px solid $color-light-3;
+      border-bottom: 1px solid $color-light-3;
+      background-color: $color-light-2;
+    }
+
+    &--account {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid $color-light-3;
+      border-bottom: 1px solid $color-light-3;
+
+      img {
+        height: 6rem;
+        width: 6rem;
+        padding: 0;
+      }
+    }
+  }
+
+  &__sidelink {
+    @include resetLink;
+
+    display: inline-block;
+    width: 100%;
+    transition: color 0.1s;
+
+    &:hover {
+      color: $color-dark-1;
+    }
+
+    &--disc {
+      padding: 1.5rem 2rem;
+      color: $color-font-light;
+      font-family: $font-andada;
+      font-size: 2.5rem;
+    }
+
+    &--more {
+      padding: 2rem 2rem;
+      color: $color-font-grey-lighter;
+      font-family: $font-lato;
+      font-size: 2rem;
+    }
+
+    &--account {
+      padding: 2rem;
+      color: $color-font-grey-lighter;
+      font-family: $font-andada;
+      font-size: 2rem;
+    }
+
+    &--right {
+      padding: 0 2rem;
+      color: $color-secondary;
+      font-family: $font-andada;
+      font-size: 2rem;
+    }
+  }
+}
+
+.js-nav {
+  &__show {
+    left: 0;
   }
 }

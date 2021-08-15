@@ -48,3 +48,9 @@
   opacity: 1 !important;
   visibility: visible !important;
 }
+
+.u-display {
+  &--block {
+    display: block !important;
+  }
+}

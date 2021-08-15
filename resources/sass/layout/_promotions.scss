@@ -8,6 +8,10 @@
     font-family: $font-lato;
     text-align: center;
 
+    @media only screen and (max-width: $bp-large) {
+      font-size: 1.6rem;
+    }
+
     span {
       text-transform: uppercase;
 
@@ -39,6 +43,11 @@
     height: max-content;
     width: 40%;
     top: 0;
+    color: $color-font-light;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 50%;
+    }
 
     &--left {
       left: 0;
@@ -52,7 +61,7 @@
   }
 
   &__title {
-    color: $color-font-grey-darker;
+    color: $color-font-light;
     font-family: $font-andada;
     font-size: 2rem;
     font-style: italic;

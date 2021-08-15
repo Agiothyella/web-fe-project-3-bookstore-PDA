@@ -14,6 +14,17 @@
       linear-gradient(to right, rgba($color-light-2, 0.5), $color-primary);
     background-position: bottom left;
     background-repeat: no-repeat;
+
+    .splide__track
+      .splide__list
+      .splide__slide
+      .splide__slide__row
+      .splide__slide
+      .splide__wrapper {
+      @media only screen and (max-width: $bp-medium) {
+        margin: 0 21%;
+      }
+    }
   }
 
   &__big {
@@ -53,6 +64,10 @@
         margin: 1rem 5rem 2.5rem 5rem;
         font-size: 1.2rem;
         line-height: 2rem;
+      }
+
+      @media only screen and (max-width: $bp-medium) {
+        margin: 1rem 1rem 2.5rem 1rem;
       }
     }
 

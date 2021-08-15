@@ -9,6 +9,10 @@
 
   &__splide {
     padding: 0 5.5rem;
+
+    @media only screen and (max-width: $bp-large) {
+      padding: 0 3rem;
+    }
   }
 
   &__splide-nav {
@@ -23,6 +27,7 @@
     justify-content: space-between;
     align-items: flex-start;
     column-gap: 10rem;
+    height: 32rem;
     margin: 0 15rem 0 18rem;
     padding: 1rem 2rem 0.5rem 4px;
     border-left: 3px solid $color-secondary;
@@ -37,12 +42,26 @@
 
     @media only screen and (max-width: $bp-large) {
       margin: 0 3rem 0 4rem;
+      column-gap: 5rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      margin: 0;
+      height: 34rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      height: 36rem;
     }
   }
 
   &__img {
     flex: 1 0 20%;
     align-self: center;
+
+    @media only screen and (max-width: $bp-medium) {
+      flex: 1 0 25%;
+    }
   }
 
   &__text {

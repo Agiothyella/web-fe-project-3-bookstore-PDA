@@ -1,5 +1,6 @@
 `use strict`;
 
+//----------------------- Splider js
 const trendingSplide = new Splide(".trending__splide", {
   type: "loop",
   rewind: true,
@@ -67,6 +68,22 @@ const categorySplide = new Splide(".category__splide", {
         right: "0rem",
       },
     },
+
+    850: {
+      perPage: 6,
+      padding: {
+        left: "0rem",
+        right: "0rem",
+      },
+    },
+
+    700: {
+      perPage: 5,
+      padding: {
+        left: "0rem",
+        right: "0rem",
+      },
+    },
   },
 }).mount();
 
@@ -98,6 +115,12 @@ const picksSplideNav = new Splide(".picks__splide-nav", {
   keyboard: false,
   drag: false,
   autoWidth: true,
+
+  breakpoints: {
+    1000: {
+      height: "12rem",
+    },
+  },
 }).mount();
 
 picksSplide.sync(picksSplideNav).mount();
@@ -115,6 +138,18 @@ const newSplide = new Splide(".new__splide", {
   cover: true,
   gap: "5rem",
   speed: 600,
+
+  breakpoints: {
+    850: {
+      height: "36rem",
+      gap: "0rem",
+    },
+
+    700: {
+      height: "38rem",
+      gap: "0rem",
+    },
+  },
 });
 
 const newSplideNav = new Splide(".new__splide-nav", {
@@ -138,6 +173,10 @@ const newSplideNav = new Splide(".new__splide-nav", {
   breakpoints: {
     1200: {
       perPage: 7,
+    },
+
+    850: {
+      perPage: 5,
     },
   },
 }).mount();
@@ -187,6 +226,31 @@ const topSplide = new Splide(".top__splide", {
           [2, 2],
           [2, 1],
         ],
+
+        gap: {
+          row: "3rem",
+          col: "4rem",
+        },
+      },
+    },
+
+    850: {
+      grid: {
+        dimensions: [
+          [1, 1],
+          [2, 1],
+          [2, 1],
+          [2, 1],
+          [1, 1],
+          [2, 1],
+          [2, 1],
+          [2, 1],
+        ],
+
+        gap: {
+          row: "2rem",
+          col: "0rem",
+        },
       },
     },
   },
@@ -221,6 +285,13 @@ const seriesSplide = new Splide(".series__splide", {
       padding: {
         right: "15rem",
         left: "15rem",
+      },
+    },
+
+    850: {
+      padding: {
+        right: "10rem",
+        left: "10rem",
       },
     },
   },
@@ -261,9 +332,15 @@ const comicSplide = new Splide(".comic__splide", {
     1000: {
       perPage: 5,
     },
+
+    850: {
+      perPage: 4,
+    },
   },
 }).mount();
+//--------------------------------------------------
 
+//---------- Nav more hide on scroll
 const nav = document.querySelector(".nav");
 const navMore = document.querySelector(".nav__more");
 
@@ -281,3 +358,35 @@ function showNav() {
 window.onscroll = function () {
   showNav();
 };
+//----------------------------------------
+
+//------------------------ Small Nav
+const sideNav = document.querySelector(".nav__sidebar");
+const sideNavBack = document.querySelector(".nav__sidebar__back");
+const sideNavMenu = document.querySelector(".nav__sidebar__menu");
+const sideNavClose = document.querySelector(".nav__sideclose");
+const sideNavOpen = document.querySelector(".nav__side");
+const sideNavLink = document.querySelectorAll(".nav__sidelink");
+
+function addSideNavListener(functName) {
+  functName.addEventListener("click", toggleSideNav);
+}
+
+function addSlideNavListeners(functName) {
+  for (let i = 0; i < functName.length; i++) {
+    functName[i].addEventListener("click", toggleSideNav);
+  }
+}
+
+addSideNavListener(sideNavBack);
+addSideNavListener(sideNavMenu);
+addSideNavListener(sideNavClose);
+addSideNavListener(sideNavOpen);
+addSideNavListener(sideNav);
+addSlideNavListeners(sideNavLink);
+
+function toggleSideNav() {
+  sideNav.classList.toggle("js-nav__show");
+  sideNavBack.classList.toggle("u-visible");
+}
+//----------------------------------
