@@ -18,6 +18,10 @@
       padding-left: 0.5rem;
       font-size: 3rem;
     }
+
+    @media only screen and (max-width: $bp-small) {
+      display: none;
+    }
   }
 
   &__background {
@@ -39,6 +43,12 @@
     justify-content: center;
     align-items: flex-start;
     height: 100%;
+
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
   }
 
   &__img {
@@ -66,6 +76,11 @@
       padding-bottom: 1rem;
     }
 
+    @media only screen and (max-width: $bp-small) {
+      flex: 1;
+      align-items: center;
+    }
+
     .splide__add-cart {
       margin-left: 1rem;
 
@@ -88,6 +103,12 @@
 
     @media only screen and (max-width: $bp-larger) {
       margin: 5.5rem 0 auto 0;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      margin: 1rem 0;
+      padding-left: 0;
+      text-align: center;
     }
   }
 

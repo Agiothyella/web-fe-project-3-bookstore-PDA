@@ -70,6 +70,62 @@
       margin-bottom: 0.5rem;
     }
   }
+}
+
+.footer {
+  &__newsletter {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+    margin: 0.5rem 2rem 0 0;
+
+    @media only screen and (max-width: $bp-large) {
+      grid-column: 1 / span 1;
+      grid-row: 3 / span 2;
+      margin: 0 4rem;
+    }
+
+    &__title {
+      font-size: 1.4rem;
+      color: $color-tertiary;
+    }
+
+    &__form {
+      margin: 0.5rem 0 1rem 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: stretch;
+    }
+
+    &__input {
+      padding: 0.5rem;
+      width: 80%;
+      border-radius: 0;
+      outline: none;
+      border: 1px solid $color-font-grey-lighter;
+      border-right: none;
+
+      @media only screen and (max-width: $bp-larger) {
+        width: 100%;
+      }
+    }
+
+    &__button {
+      background-color: $color-tertiary;
+      padding: 0.5rem 1.1rem;
+      outline: none;
+      border: 1px solid $color-font-grey-lighter;
+      border-left: none;
+      color: $color-primary;
+      font-size: 1.4rem;
+      cursor: pointer;
+    }
+
+    &__text {
+      color: $color-font-grey-lighter;
+      text-align: justify;
+    }
+  }
 
   &__copyright {
     grid-column: 2 / span 1;
@@ -125,61 +181,9 @@
       }
     }
   }
+}
 
-  &__newsletter {
-    grid-column: 2 / span 1;
-    grid-row: 2 / span 1;
-    margin: 0.5rem 2rem 0 0;
-
-    @media only screen and (max-width: $bp-large) {
-      grid-column: 1 / span 1;
-      grid-row: 3 / span 2;
-      margin: 0 4rem;
-    }
-
-    &__title {
-      font-size: 1.4rem;
-      color: $color-tertiary;
-    }
-
-    &__form {
-      margin: 0.5rem 0 1rem 0;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: stretch;
-    }
-
-    &__input {
-      padding: 0.5rem;
-      width: 80%;
-      border-radius: 0;
-      outline: none;
-      border: 1px solid $color-font-grey-lighter;
-      border-right: none;
-
-      @media only screen and (max-width: $bp-larger) {
-        width: 100%;
-      }
-    }
-
-    &__button {
-      background-color: $color-tertiary;
-      padding: 0.5rem 1.1rem;
-      outline: none;
-      border: 1px solid $color-font-grey-lighter;
-      border-left: none;
-      color: $color-primary;
-      font-size: 1.4rem;
-      cursor: pointer;
-    }
-
-    &__text {
-      color: $color-font-grey-lighter;
-      text-align: justify;
-    }
-  }
-
+.footer {
   &__menu {
     grid-column: 1 / span 1;
     grid-row: 2 / span 3;
@@ -195,6 +199,10 @@
       margin-right: 0;
     }
 
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: 1fr;
+    }
+
     &__category {
       display: flex;
       flex-direction: column;
@@ -207,15 +215,24 @@
       transition: background-color 0.1s;
 
       @media only screen and (max-width: $bp-medium) {
-        padding: 0.5rem 1.5rem;
+        cursor: pointer;
+        padding: 1rem 2rem;
 
         &:hover {
           background-color: $color-light-2;
         }
-      }
 
-      .accordion-active {
-        background-color: $color-light-2;
+        &::after {
+          content: "\0002B";
+          color: $color-light-3;
+          font-size: 2rem;
+          float: right;
+          transition: color 0.2s;
+        }
+
+        &:hover::after {
+          color: $color-font-grey-lighter;
+        }
       }
     }
 
@@ -224,6 +241,21 @@
       display: flex;
       flex-direction: column;
       row-gap: 0.5rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        max-height: 0;
+        margin: 0 2.5rem;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+      }
+    }
+
+    &__item {
+      @media only screen and (max-width: $bp-medium) {
+        &:last-child {
+          padding-bottom: 2rem;
+        }
+      }
     }
 
     &__link {
@@ -234,6 +266,10 @@
         color: $color-font-grey-dark;
         font-size: 1.2rem;
         transition: color 0.1s;
+
+        @media only screen and (max-width: $bp-medium) {
+          font-size: 1.4rem;
+        }
       }
 
       &:hover,
@@ -241,5 +277,14 @@
         color: $color-secondary;
       }
     }
+  }
+}
+
+.accordion-active {
+  background-color: $color-light-2;
+
+  &::after {
+    content: "\02212";
+    color: $color-font-grey-lighter;
   }
 }

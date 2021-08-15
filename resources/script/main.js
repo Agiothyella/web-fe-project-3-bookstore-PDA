@@ -40,6 +40,13 @@ const promotionsSplide = new Splide(".promotions__splide", {
   interval: 10000,
   pauseOnHover: true,
   pauseOnFocus: false,
+
+  breakpoints: {
+    850: {
+      height: 0,
+      heightRatio: 0.4,
+    },
+  },
 }).mount();
 
 const categorySplide = new Splide(".category__splide", {
@@ -64,24 +71,24 @@ const categorySplide = new Splide(".category__splide", {
     1000: {
       perPage: 7,
       padding: {
-        left: "0rem",
-        right: "0rem",
+        left: 0,
+        right: 0,
       },
     },
 
     850: {
       perPage: 6,
       padding: {
-        left: "0rem",
-        right: "0rem",
+        left: 0,
+        right: 0,
       },
     },
 
     700: {
       perPage: 5,
       padding: {
-        left: "0rem",
-        right: "0rem",
+        left: 0,
+        right: 0,
       },
     },
   },
@@ -390,3 +397,26 @@ function toggleSideNav() {
   sideNavBack.classList.toggle("u-visible");
 }
 //----------------------------------
+
+//------------------------------- Accordion
+const footerHeader = document.getElementsByClassName("footer__menu__header");
+const bpMedium = window.matchMedia("(max-width: 53.125em)");
+
+function checkFooterAccordion(media) {
+  if (media.matches) {
+    for (i = 0; i < footerHeader.length; i++) {
+      footerHeader[i].addEventListener("click", function () {
+        this.classList.toggle("accordion-active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+  }
+}
+
+checkFooterAccordion(bpMedium);
+//-----------------------------------------
