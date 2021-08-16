@@ -3,27 +3,6 @@
     cursor: grab;
   }
 
-  &__header {
-    width: max-content;
-    margin-top: 4rem;
-    padding-left: 15rem;
-    border-bottom: 2px solid $color-secondary;
-    font-family: $font-playfair;
-
-    @media only screen and (max-width: $bp-large) {
-      padding-left: 5rem;
-    }
-
-    @media only screen and (max-width: $bp-medium) {
-      padding-left: 0.5rem;
-      font-size: 3rem;
-    }
-
-    @media only screen and (max-width: $bp-small) {
-      display: none;
-    }
-  }
-
   &__background {
     position: absolute;
     top: 0;
@@ -48,6 +27,12 @@
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
+    }
+
+    @media only screen and (max-width: $bp-break-trending) {
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
     }
   }
 
@@ -81,6 +66,10 @@
       align-items: center;
     }
 
+    @media only screen and (max-width: $bp-break-trending) {
+      align-items: flex-start;
+    }
+
     .splide__add-cart {
       margin-left: 1rem;
 
@@ -90,6 +79,10 @@
 
       @media only screen and (max-width: $bp-medium) {
         margin-bottom: 1rem;
+      }
+
+      @media only screen and (max-width: $bp-break-trending) {
+        margin-bottom: 0;
       }
     }
   }
@@ -109,6 +102,11 @@
       margin: 1rem 0;
       padding-left: 0;
       text-align: center;
+    }
+
+    @media only screen and (max-width: $bp-break-trending) {
+      padding-left: 1rem;
+      text-align: left;
     }
   }
 

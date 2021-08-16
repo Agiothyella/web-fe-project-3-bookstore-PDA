@@ -320,6 +320,14 @@
     @media only screen and (max-width: $bp-medium) {
       margin: 0 0;
     }
+
+    @media only screen and (max-width: $bp-smaller) {
+      margin: 0 10rem;
+    }
+
+    @media only screen and (max-width: $bp-break-top) {
+      margin: 0 0;
+    }
   }
 
   &--tall {

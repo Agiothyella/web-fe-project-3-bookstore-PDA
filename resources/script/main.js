@@ -27,6 +27,11 @@ const trendingSplide = new Splide(".trending__splide", {
       perPage: 2,
       perMove: 2,
     },
+
+    430: {
+      perPage: 1,
+      perMove: 1,
+    },
   },
 }).mount();
 
@@ -45,6 +50,11 @@ const promotionsSplide = new Splide(".promotions__splide", {
     850: {
       height: 0,
       heightRatio: 0.4,
+    },
+
+    540: {
+      height: "25rem",
+      heightRatio: 0,
     },
   },
 }).mount();
@@ -91,6 +101,22 @@ const categorySplide = new Splide(".category__splide", {
         right: 0,
       },
     },
+
+    540: {
+      perPage: 4,
+      padding: {
+        left: 0,
+        right: 0,
+      },
+    },
+
+    430: {
+      perPage: 3,
+      padding: {
+        left: 0,
+        right: 0,
+      },
+    },
   },
 }).mount();
 
@@ -108,6 +134,13 @@ const picksSplide = new Splide(".picks__splide", {
   autoplay: true,
   interval: 20000,
   pauseOnFocus: false,
+
+  breakpoints: {
+    850: {
+      height: 0,
+      heightRatio: 0.55,
+    },
+  },
 });
 
 const picksSplideNav = new Splide(".picks__splide-nav", {
@@ -149,12 +182,17 @@ const newSplide = new Splide(".new__splide", {
   breakpoints: {
     850: {
       height: "36rem",
-      gap: "0rem",
+      gap: 0,
     },
 
     700: {
-      height: "38rem",
-      gap: "0rem",
+      height: "38.5rem",
+      gap: 0,
+    },
+
+    430: {
+      height: "41.5rem",
+      gap: 0,
     },
   },
 });
@@ -184,6 +222,10 @@ const newSplideNav = new Splide(".new__splide-nav", {
 
     850: {
       perPage: 5,
+    },
+
+    600: {
+      perPage: 3,
     },
   },
 }).mount();
@@ -218,7 +260,7 @@ const topSplide = new Splide(".top__splide", {
     1200: {
       grid: {
         gap: {
-          row: "0rem",
+          row: 0,
           col: "4rem",
         },
       },
@@ -256,7 +298,29 @@ const topSplide = new Splide(".top__splide", {
 
         gap: {
           row: "2rem",
-          col: "0rem",
+          col: 0,
+        },
+      },
+    },
+
+    600: {
+      perPage: 1,
+      perMove: 1,
+      grid: {
+        dimensions: [
+          [1, 1],
+          [2, 1],
+          [2, 1],
+          [2, 1],
+          [1, 1],
+          [2, 1],
+          [2, 1],
+          [2, 1],
+        ],
+
+        gap: {
+          row: "2rem",
+          col: 0,
         },
       },
     },
@@ -296,9 +360,25 @@ const seriesSplide = new Splide(".series__splide", {
     },
 
     850: {
+      gap: "3rem",
       padding: {
         right: "10rem",
         left: "10rem",
+      },
+    },
+
+    600: {
+      gap: "2rem",
+      padding: {
+        right: "5rem",
+        left: "5rem",
+      },
+    },
+
+    500: {
+      padding: {
+        right: 0,
+        left: 0,
       },
     },
   },
@@ -342,6 +422,14 @@ const comicSplide = new Splide(".comic__splide", {
 
     850: {
       perPage: 4,
+    },
+
+    600: {
+      perPage: 3,
+    },
+
+    420: {
+      perPage: 2,
     },
   },
 }).mount();

@@ -1,17 +1,13 @@
 .new {
-  &__header {
-    width: max-content;
-    padding: 0.5rem 2rem 0 5rem;
-    border-bottom: 2px solid $color-secondary;
-    color: $color-font-dark;
-    font-family: $font-playfair;
-  }
-
   &__splide {
     padding: 0 5.5rem;
 
     @media only screen and (max-width: $bp-large) {
       padding: 0 3rem;
+    }
+
+    @media only screen and (max-width: $bp-smaller) {
+      padding: 0;
     }
   }
 
@@ -53,6 +49,15 @@
     @media only screen and (max-width: $bp-small) {
       height: 36rem;
     }
+
+    @media only screen and (max-width: 30em) {
+      height: 36rem;
+      padding: 1rem 2rem 0.5rem 2rem;
+    }
+
+    @media only screen and (max-width: $bp-break-new) {
+      height: 41.5rem;
+    }
   }
 
   &__img {
@@ -61,6 +66,10 @@
 
     @media only screen and (max-width: $bp-medium) {
       flex: 1 0 25%;
+    }
+
+    @media only screen and (max-width: 30em) {
+      display: none;
     }
   }
 
@@ -140,6 +149,11 @@
 
     @media only screen and (max-width: $bp-huge) {
       margin-bottom: 0.5rem;
+    }
+
+    @media only screen and (max-width: 30em) {
+      padding-left: 0;
+      border-left: none;
     }
   }
 
