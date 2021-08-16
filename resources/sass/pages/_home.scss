@@ -6,12 +6,6 @@
     [center-end fillr-start] 1fr [fillr-end];
 }
 
-.help {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-}
-
 .nav {
   grid-column: filll-start / fillr-end;
   z-index: 5;
@@ -63,18 +57,30 @@
   grid-column: center-start / center-end;
   width: 100%;
   margin: 5rem 0;
+
+  @media only screen and (max-width: $bp-smaller) {
+    margin: 3rem 0;
+  }
 }
 
 .new {
   grid-column: center-start / center-end;
   width: 100%;
   margin: 6rem 0 4rem 0;
+
+  @media only screen and (max-width: $bp-smaller) {
+    margin: 8rem 0 4rem 0;
+  }
 }
 
 .top {
   grid-column: center-start / center-end;
   width: 100%;
   margin: 8rem 0 10rem 0;
+
+  @media only screen and (max-width: $bp-smaller) {
+    margin: 8rem 0;
+  }
 }
 
 .series {
@@ -94,6 +100,10 @@
   grid-column: center-start / center-end;
   width: 100%;
   margin: 10rem 0 6rem 0;
+
+  @media only screen and (max-width: $bp-smaller) {
+    margin: 8rem 0 6rem 0;
+  }
 }
 
 .promotions-static {
@@ -108,6 +118,10 @@
 
   @media only screen and (max-width: $bp-break-promotions) {
     height: 25rem;
+  }
+
+  @media only screen and (max-width: $bp-smaller) {
+    margin: 3rem 0 6rem 0;
   }
 }
 
@@ -127,6 +141,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: flex-end;
+      margin-bottom: 2rem;
     }
   }
 

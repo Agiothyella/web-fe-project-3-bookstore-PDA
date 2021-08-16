@@ -2147,12 +2147,6 @@ img {
   grid-template-columns: [filll-start] 1fr [filll-end center-start] minmax(0, 145rem) [center-end fillr-start] 1fr [fillr-end];
 }
 
-.help {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-}
-
 .nav {
   grid-column: filll-start / fillr-end;
   z-index: 5;
@@ -2201,16 +2195,34 @@ img {
   margin: 5rem 0;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .picks {
+    margin: 3rem 0;
+  }
+}
+
 .new {
   grid-column: center-start / center-end;
   width: 100%;
   margin: 6rem 0 4rem 0;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .new {
+    margin: 8rem 0 4rem 0;
+  }
+}
+
 .top {
   grid-column: center-start / center-end;
   width: 100%;
   margin: 8rem 0 10rem 0;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .top {
+    margin: 8rem 0;
+  }
 }
 
 .series {
@@ -2226,6 +2238,12 @@ img {
   grid-column: center-start / center-end;
   width: 100%;
   margin: 10rem 0 6rem 0;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .comic {
+    margin: 8rem 0 6rem 0;
+  }
 }
 
 .promotions-static {
@@ -2247,6 +2265,12 @@ img {
   }
 }
 
+@media only screen and (max-width: 37.5em) {
+  .promotions-static {
+    margin: 3rem 0 6rem 0;
+  }
+}
+
 .footer {
   grid-column: filll-start / fillr-end;
 }
@@ -2264,6 +2288,7 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+    margin-bottom: 2rem;
   }
 }
 
