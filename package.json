@@ -1,7 +1,7 @@
 {
-  "name": "agiothyella-architecture",
+  "name": "agiothyella-bookstore",
   "version": "1.0.0",
-  "description": "Webpage for Agiothyella Architecture",
+  "description": "Webpage for Agiothyella Bookstore",
   "main": "index.js",
   "scripts": {
     "compile:sass": "node-sass resources/sass/main.scss resources/css/style.comp.css",
