@@ -239,6 +239,11 @@
     background-color: rgba($color-primary, 0.75);
     opacity: 0;
     visibility: hidden;
+
+    @media only screen and (hover: none) {
+      opacity: 1;
+      visibility: visible;
+    }
   }
 
   &--relative {

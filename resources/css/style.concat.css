@@ -16,7 +16,7 @@ html {
 
 body {
   background-color: #f8f9fc;
-  color: #000; }
+  color: #282828; }
 
 img {
   font-size: 1.2rem;
@@ -338,6 +338,10 @@ img {
     background-color: rgba(248, 249, 252, 0.75);
     opacity: 0;
     visibility: hidden; }
+    @media only screen and (hover: none) {
+      .splide__add-cart--absolute {
+        opacity: 1;
+        visibility: visible; } }
   .splide__add-cart--relative {
     position: relative; }
 
@@ -1113,7 +1117,7 @@ img {
 
 .new__link:link, .new__link:visited {
   text-decoration: none;
-  color: #000;
+  color: #282828;
   transition: color 0.1s; }
 
 .new__link:hover, .new__link:active {
@@ -1220,7 +1224,7 @@ img {
 
 .promotions__content:link, .promotions__content:visited {
   text-decoration: none;
-  color: #000; }
+  color: #282828; }
 
 .promotions__text {
   display: flex;
@@ -1482,7 +1486,7 @@ img {
   width: 100%;
   margin: 4.5rem 0 auto 0;
   padding-left: 1rem;
-  color: #000;
+  color: #282828;
   border-bottom: 2px solid #c00000; }
   @media only screen and (max-width: 75em) {
     .trending__title {
@@ -1499,7 +1503,7 @@ img {
 
 .trending__author {
   padding-left: 1rem;
-  color: #000;
+  color: #282828;
   font-size: 1.6rem; }
 
 .trending__genre {
@@ -1523,10 +1527,10 @@ img {
 .trending__link:link, .trending__link:visited {
   text-decoration: none;
   transition: all 0.1s;
-  color: #000; }
+  color: #282828; }
 
 .trending__link:hover, .trending__link:active {
-  color: #de3c3c; }
+  color: #fff; }
 
 .container {
   display: grid;
@@ -1645,7 +1649,7 @@ img {
   width: max-content;
   padding: 0.5rem 2rem 0 5rem;
   border-bottom: 2px solid #c00000;
-  color: #000;
+  color: #282828;
   font-family: "Playfair Display", serif; }
   @media only screen and (max-width: 37.5em) {
     .section__header {
