@@ -14,9 +14,10 @@
     &:link,
     &:visited {
       @include resetLink;
-      color: $color-font-grey-dark;
+      color: $color-tertiary;
       border-bottom: 1px solid transparent;
       font-size: 1.4rem;
+      text-transform: uppercase;
       transition: all 0.1s;
     }
 
@@ -46,7 +47,7 @@
   }
 
   &__splide-nav {
-    position: absolute;
+    position: absolute !important;
     bottom: 0;
     left: 0;
     width: 25%;
