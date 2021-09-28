@@ -1173,7 +1173,7 @@ img {
   left: 0;
   width: 25%;
   height: 43rem;
-  background-image: linear-gradient(to top right, rgba(235, 235, 235, 0.9), rgba(255, 255, 255, 0.9));
+  background-image: linear-gradient(to top right, rgba(235, 235, 235, 0.95), rgba(255, 255, 255, 0.95));
   box-shadow: inset 2px 0 5px #c8c8c8;
   font-family: "Lato", sans-serif; }
   @media only screen and (max-width: 53.125em) {
@@ -1348,7 +1348,7 @@ img {
     text-decoration: none;
     padding: 0.2rem;
     border-bottom: 1px solid transparent;
-    color: #282828;
+    color: #de3c3c;
     font-family: "Andada Pro", serif;
     font-size: 1.1rem;
     transition: all 0.1s; }
