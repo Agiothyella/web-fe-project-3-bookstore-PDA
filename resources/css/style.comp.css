@@ -703,11 +703,14 @@ img {
   .footer__menu__link:hover, .footer__menu__link:active {
     color: #c00000; }
 
-.accordion-active {
-  background-color: #ebebeb; }
+@media only screen and (max-width: 53.125em) {
+  .accordion-active {
+    background-color: #ebebeb; } }
+
+@media only screen and (max-width: 53.125em) {
   .accordion-active::after {
     content: "\02212";
-    color: #585858; }
+    color: #585858; } }
 
 .nav--scroll {
   border-bottom: 1px solid #c8c8c8 !important; }
